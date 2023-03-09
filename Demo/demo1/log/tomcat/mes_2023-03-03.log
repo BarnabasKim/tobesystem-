@@ -1,0 +1,227 @@
+2023-03-03 08:53:06 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 14340 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 08:53:06 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 08:53:08 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 08:53:08 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 08:53:08 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.308 seconds (JVM running for 3.111)
+2023-03-03 09:04:03 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 09:04:03 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 09:04:03 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 09:18:33 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 09:18:33 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 09:18:41 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 1980 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 09:18:41 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 09:18:43 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:18:43 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:18:43 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.099 seconds (JVM running for 7.203)
+2023-03-03 09:19:02 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 09:19:02 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 09:19:03 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 09:24:49 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-03 09:28:18 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 09:28:18 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 09:28:29 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 8000 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 09:28:29 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 09:28:31 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:28:31 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:28:31 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.29 seconds (JVM running for 3.257)
+2023-03-03 09:28:40 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 09:28:40 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 09:28:41 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 09:30:26 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 09:30:26 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 09:30:30 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 1140 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 09:30:30 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 09:30:31 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:30:31 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:30:32 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.188 seconds (JVM running for 2.945)
+2023-03-03 09:30:40 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 09:30:40 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 09:30:40 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 09:38:16 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 09:38:16 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 09:38:22 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 10004 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 09:38:22 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 09:38:24 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:38:24 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:38:24 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.45 seconds (JVM running for 3.184)
+2023-03-03 09:38:41 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 09:38:41 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 09:38:41 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 09:39:21 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 09:39:21 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 09:39:24 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 8772 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 09:39:24 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 09:39:26 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:39:26 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:39:26 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.13 seconds (JVM running for 2.83)
+2023-03-03 09:40:32 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 4572 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 09:40:32 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 09:40:34 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:40:34 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:40:34 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.428 seconds (JVM running for 3.19)
+2023-03-03 09:42:11 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 12740 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 09:42:11 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 09:42:12 [WARN ] [AbstractApplicationContext.java]refresh(558) : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [org.example.search.SearchRestController]: public java.lang.String org.example.search.SearchRestController.update(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.example.search.DTO.JTH_LIST)
+2023-03-03 09:42:12 [ERROR] [SpringApplication.java]reportFailure(826) : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [org.example.search.SearchRestController]: public java.lang.String org.example.search.SearchRestController.update(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.example.search.DTO.JTH_LIST)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.example.mainApplication.main(mainApplication.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Invalid mapping on handler class [org.example.search.SearchRestController]: public java.lang.String org.example.search.SearchRestController.update(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.example.search.DTO.JTH_LIST)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$0(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.core.MethodIntrospector.lambda$selectMethods$0(MethodIntrospector.java:74)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	... 21 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'param.idx' in value "/update/${param.idx}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:908)
+	at org.springframework.beans.factory.config.EmbeddedValueResolver.resolveStringValue(EmbeddedValueResolver.java:54)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.resolveEmbeddedValuesInPatterns(RequestMappingHandlerMapping.java:336)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.createRequestMappingInfo(RequestMappingHandlerMapping.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.createRequestMappingInfo(RequestMappingHandlerMapping.java:267)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getMappingForMethod(RequestMappingHandlerMapping.java:227)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getMappingForMethod(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$0(AbstractHandlerMethodMapping.java:276)
+	... 31 common frames omitted
+2023-03-03 09:45:05 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 11624 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 09:45:05 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 09:45:07 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:45:07 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 09:45:07 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.165 seconds (JVM running for 2.839)
+2023-03-03 10:08:09 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 15336 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 10:08:09 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 10:08:11 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:08:11 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:08:11 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.155 seconds (JVM running for 2.828)
+2023-03-03 10:08:29 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 10:08:29 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 10:08:29 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 10:39:40 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 10:39:40 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 10:39:43 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 9444 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 10:39:43 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 10:39:45 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:39:45 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:39:45 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.124 seconds (JVM running for 2.859)
+2023-03-03 10:39:49 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 10:39:49 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 10:39:49 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 10:40:02 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 10:40:02 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 10:40:05 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 1504 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 10:40:05 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 10:40:07 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:40:07 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:40:07 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.172 seconds (JVM running for 2.91)
+2023-03-03 10:40:14 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 10:40:14 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 10:40:15 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 10:40:49 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 10:40:49 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 10:40:52 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 2664 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 10:40:52 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 10:40:54 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:40:54 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:40:54 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.371 seconds (JVM running for 3.084)
+2023-03-03 10:46:10 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 9776 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 10:46:10 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 10:46:12 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:46:12 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:46:12 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.299 seconds (JVM running for 3.034)
+2023-03-03 10:46:17 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 10:46:17 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 10:46:17 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 10:55:17 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 10:55:17 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 10:55:20 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 11808 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 10:55:20 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 10:55:22 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:55:22 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:55:22 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.13 seconds (JVM running for 2.836)
+2023-03-03 10:55:28 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 10:55:28 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 10:55:29 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 10:57:27 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 10:57:27 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 10:57:31 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 14280 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 10:57:31 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 10:57:33 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:57:33 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 10:57:33 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.514 seconds (JVM running for 3.298)
+2023-03-03 10:57:40 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 10:57:40 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 10:57:41 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 11:20:01 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 11:20:01 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 11:20:05 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 12092 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 11:20:05 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 11:20:07 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 11:20:07 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 11:20:07 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.125 seconds (JVM running for 2.799)
+2023-03-03 11:20:14 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 11:20:14 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 11:20:14 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 11:50:13 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 11:50:13 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 11:50:16 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 6572 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 11:50:16 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 11:50:18 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 11:50:18 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 11:50:18 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.344 seconds (JVM running for 3.061)
+2023-03-03 11:50:21 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 11:50:21 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 11:50:21 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 11:59:08 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 11:59:08 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 11:59:11 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 9324 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 11:59:11 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 11:59:13 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 11:59:13 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 11:59:13 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.441 seconds (JVM running for 3.155)
+2023-03-03 11:59:26 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 11:59:26 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 11:59:26 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 13:40:13 [WARN ] [HikariPool.java]run(787) : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h29m45s921ms124µs800ns).
+2023-03-03 13:48:30 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 13:48:30 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-03 13:48:33 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-L2ACOJ2 with PID 8592 (D:\workspace\demo1\build\classes\java\main started by user in D:\workspace\demo1)
+2023-03-03 13:48:33 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-03 13:48:35 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 13:48:35 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-03 13:48:35 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.096 seconds (JVM running for 2.834)
+2023-03-03 13:49:01 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-03 13:49:01 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-03 13:49:01 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-03 14:46:55 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-03 14:46:55 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.

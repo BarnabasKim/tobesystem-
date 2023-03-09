@@ -1,0 +1,125 @@
+2023-03-07 09:05:33 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 1656 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 09:05:33 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 09:05:34 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 09:05:34 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 09:05:35 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.334 seconds (JVM running for 3.027)
+2023-03-07 11:00:33 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 19288 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 11:00:33 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 11:00:34 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 11:00:34 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 11:00:34 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.752 seconds (JVM running for 2.598)
+2023-03-07 16:00:30 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 17084 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 16:00:30 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 16:00:31 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:00:31 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:00:31 [WARN ] [OptionalLiveReloadServer.java]startServer(61) : Unable to start LiveReload server
+2023-03-07 16:00:31 [ERROR] [LoggingFailureAnalysisReporter.java]report(40) : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2023-03-07 16:00:54 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 5248 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 16:00:54 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 16:00:55 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:00:55 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:00:55 [WARN ] [OptionalLiveReloadServer.java]startServer(61) : Unable to start LiveReload server
+2023-03-07 16:00:55 [ERROR] [LoggingFailureAnalysisReporter.java]report(40) : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2023-03-07 16:01:47 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 13412 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 16:01:47 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 16:01:48 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:01:48 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:01:48 [WARN ] [OptionalLiveReloadServer.java]startServer(61) : Unable to start LiveReload server
+2023-03-07 16:01:48 [ERROR] [LoggingFailureAnalysisReporter.java]report(40) : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2023-03-07 16:02:53 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 4244 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 16:02:53 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 16:02:55 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:02:55 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:02:55 [WARN ] [OptionalLiveReloadServer.java]startServer(61) : Unable to start LiveReload server
+2023-03-07 16:02:55 [ERROR] [LoggingFailureAnalysisReporter.java]report(40) : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2023-03-07 16:05:36 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 14064 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 16:05:36 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 16:05:37 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:05:37 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 16:05:37 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.711 seconds (JVM running for 4.696)
+2023-03-07 16:06:47 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-07 16:06:47 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-07 16:06:47 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-07 16:41:31 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-07 17:02:56 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-07 17:02:56 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-07 17:03:02 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 2696 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 17:03:02 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 17:03:03 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 17:03:03 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 17:03:03 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.63 seconds (JVM running for 4.418)
+2023-03-07 17:03:11 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-07 17:03:11 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-07 17:03:11 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-07 17:08:01 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-07 17:09:15 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-07 17:09:15 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-07 17:09:19 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 6840 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 17:09:19 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 17:09:20 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 17:09:20 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 17:09:20 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.748 seconds (JVM running for 2.276)
+2023-03-07 17:09:25 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-07 17:09:29 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-07 17:09:43 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 3724 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-07 17:09:43 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-07 17:09:45 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 17:09:45 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-07 17:09:45 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.666 seconds (JVM running for 2.168)
+2023-03-07 17:09:48 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-07 17:09:48 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-07 17:09:49 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-07 18:05:12 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-07 18:05:12 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.Mapper.home.HomeMapper">
+
+    <select id="view" resultType="org.example.home.DTO.USER_LIST_KDW">
+        SELECT * FROM USER_LIST_KDW
+    </select>
+
+    <insert id="add">
+        insert into USER_LIST_KDW(user_no,NAME,age,NUMBER,remark)
+        values ( #{user_no}, #{name} , #{age}, #{number}, #{remark})
+    </insert>
+
+    <delete id="remove">
+        delete from USER_LIST_KDW WHERE USER_NO = #{user_no}
+    </delete>
+    
+    <select id="oneGet" resultType="org.example.home.DTO.USER_LIST_KDW">
+        SELECT * FROM USER_LIST_KDW WHERE USER_NO = #{user_no}
+    </select>
+    
+    <update id="updateAll">
+        UPDATE USER_LIST_KDW set NAME = #{name} , AGE =#{age} , NUMBER = #{number} , REMARK = #{remark} WHERE USER_NO = #{user_no};
+    </update>
+
+<!--    <update id="update_data">-->
+<!--        UPDATE JTH_LIST SET CODE = #{USER_NO}, NAME = #{name}, QT. #{qty}, REMARK = #{remark} WHERE IDX = #{idx}-->
+<!--    </update>-->
+
+<!--    <delete id="del_data">-->
+<!--        DELETE FROM JTH_LIST where IDX = #{idx}-->
+<!--    </delete>-->
+
+
+</mapper>
