@@ -15,6 +15,8 @@ public interface HomeMapper {
 
     List<USER_LIST_KDW> view();
 
+    void addAll(USER_LIST_KDW user_list_kdw);
+
     void add(USER_LIST_KDW user_list_kdw);
 
     void remove(USER_LIST_KDW user_list_kdw);

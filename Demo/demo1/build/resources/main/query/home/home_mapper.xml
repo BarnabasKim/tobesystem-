@@ -11,6 +11,7 @@
         values ( #{user_no}, #{name} , #{age}, #{number}, #{remark})
     </insert>
 
+
     <delete id="remove">
         delete from USER_LIST_KDW WHERE USER_NO = #{user_no}
     </delete>

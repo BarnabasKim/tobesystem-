@@ -40,7 +40,7 @@ function update(data) {
 
 
 function check(){
-    // alert('조회를 하였습니다');
+    alert('조회를 하였습니다');
     window.location.href = "/view";
 
 }
