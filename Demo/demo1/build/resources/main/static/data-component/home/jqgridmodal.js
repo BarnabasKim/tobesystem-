@@ -32,36 +32,44 @@ function aa () {
     // var user_tel_val = (document).getElementById("user_tel").value
     // var user_empty_val = (document).getElementById("user_empty").value
     // modal_obj = {USER_NO : user_no_val, NAME : user_name_val,AGE : user_age_val,NUMBER : user_tel_val, REMARK : user_empty_val };
-    var objName;
-    var objValue;
-    var modal_obj = {};
-    $(".modal_modify2").each(function (i){
-        objName = $(this).attr("name");
-        objValue = $(this).val();
-        modal_obj[objName] = objValue;
-    })
-    console.log(modal_obj);
 
-    // $.ajax({
-    //     url: "/view_update",
-    //     type: "POST",
-    //     data: modal_obj,
-    //     success :function(data) {
-    //         console.log("@@")
-    //         console.log(data);
-    //         alert("수정이 완료 되었습니다.")
-    //         // $(this).dialog("close");
-    //
-    //         // location.href =  "/view";
-    //         // var objName;
-    //         // $(".board_modify").each(function (i, item){
-    //         //     objName = $(this).attr('name');
-    //         //     $(this).val(data[objName])
-    //         // });
-    //     },
-    //     error : function (request,status,error) {
-    //         alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
-    //     }
+    // var objName;
+    // var objValue;
+    // var modal_obj = {};
+    // $(".modal_modify2").each(function (i){
+    //     objName = $(this).attr("user_no");
+    //     objValue = $(this).val();
+    //     modal_obj[objName] = objValue;
     // })
+    // console.log(modal_obj);
+    var obj_data = {}
+    var data_list = $(".modal_modify2")
+    data_list.each(function (index, item) {
+         obj_data[item.name] = $(item).val();
+    });
+
+
+    $.ajax({
+        url: "/view_update",
+        type: "POST",
+        data: obj_data,
+        success :function(data) {
+            console.log("@@")
+            console.log(data);
+            alert("수정이 완료 되었습니다.")
+            // $("#dialog1").addClass( "hidden" )
+            $(this).dialog("close");
+
+            // location.href =  "/view";
+            // var objName;
+            // $(".board_modify").each(function (i, item){
+            //     objName = $(this).attr('name');
+            //     $(this).val(data[objName])
+            // });
+        },
+        error : function (request,status,error) {
+            alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
+        }
+    })
 
 }

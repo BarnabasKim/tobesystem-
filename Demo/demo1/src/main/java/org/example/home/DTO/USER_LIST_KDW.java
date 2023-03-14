@@ -10,6 +10,7 @@ public class USER_LIST_KDW {
     private String name;
     private String age;
 
+    private String idList;
     private String number;
     private String remark;
 

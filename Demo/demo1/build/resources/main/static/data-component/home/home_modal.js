@@ -13,6 +13,7 @@ function modal_make() {
             },
             "저장": function () {
                     aa();
+
             }
         }
     });
@@ -30,14 +31,14 @@ function aa () {
     // var user_tel_val = (document).getElementById("user_tel").value
     // var user_empty_val = (document).getElementById("user_empty").value
     // modal_obj = {USER_NO : user_no_val, NAME : user_name_val,AGE : user_age_val,NUMBER : user_tel_val, REMARK : user_empty_val };
-    var objName;
-    var objValue;
-    $(".modal_modify").each(function (i){
-        objName = $(this).attr("name");
-        objValue = $(this).val();
-        modal_obj[objName] = objValue;
-    })
-    console.log(modal_obj);
+    // var objName;
+    // var objValue;
+    // $(".modal_modify").each(function (i){
+    //     objName = $(this).attr("name");
+    //     objValue = $(this).val();
+    //     modal_obj[objName] = objValue;
+    // })
+    // console.log(modal_obj);
 
     $.ajax({
         url: "/home_update",

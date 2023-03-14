@@ -16,11 +16,14 @@
     <script src="ui-component/jqGrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>
     <script src="/data-component/home/jqgrid.js"></script>
 <%--    // jQuery js파일을 jqGrid js파일보다 상위에 선언해야 제대로 동작함--%>
+
+
 </head>
 <body>
 <button id="check-button" type="button" onclick="check()">조회</button>
-<button id="post-button" type="button" onclick="modaladd()">추가</button>
-<button id="delete-button" type="button" >삭제</button>
+<button id="post-button" type="button" onclick="modaload()">추가</button>
+<button id="delete-button" type="button" id="user_no" onclick="deleteValue1(); ">삭제</button>
+<button id="modify-button" type="button" onclick="modifyValue(); ">수정</button>
 <div class="jqgrid_main">
     <table id="jqGrid">
         <div id="pager"></div>

@@ -36,7 +36,7 @@ public class HomeController {
 
         USER_LIST_KDW user_list_kdw = new USER_LIST_KDW();
         //
-        user_list_kdw.setUser_no(req.getParameter("userno"));
+        user_list_kdw.setUser_no(req.getParameter("user_no"));
         user_list_kdw.setName(req.getParameter("name"));
         user_list_kdw.setAge(req.getParameter("age"));
         user_list_kdw.setNumber(req.getParameter("tel"));
@@ -49,14 +49,14 @@ public class HomeController {
         return "home/index";
 
     }
-@RequestMapping(value = "/delete", method = RequestMethod.GET)
-    public String boardDeletePro(USER_LIST_KDW user_list_kdw, Model model) {
+@RequestMapping(value = "/delete_update", method = RequestMethod.POST)
+    public String boardDeletePro(USER_LIST_KDW user_list_kdw,Model model) {
 
     System.out.println(user_list_kdw);
         servies.remove(user_list_kdw);
 
         model.addAttribute("viewAll",servies.view());
-        return "home/index";
+        return "home/jqgrid";
 
     }
 

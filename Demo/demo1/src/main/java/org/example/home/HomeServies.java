@@ -29,8 +29,17 @@ public class HomeServies {
     }
 
     public void remove(USER_LIST_KDW user_list_kdw) {
-        mapper.remove(user_list_kdw);
+
+//        System.out.println(user_list_kdw.getIdList());
+      String[] array =  user_list_kdw.getIdList().split(",");
+      for (String key : array){
+          System.out.println(key);
+          mapper.remove(key);
+      }
+
     }
+
+
 
     public USER_LIST_KDW oneGet(USER_LIST_KDW user_list_kdw) {
         return mapper.oneGet(user_list_kdw);

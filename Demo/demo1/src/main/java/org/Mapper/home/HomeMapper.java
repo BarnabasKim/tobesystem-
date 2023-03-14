@@ -19,7 +19,7 @@ public interface HomeMapper {
 
     void add(USER_LIST_KDW user_list_kdw);
 
-    void remove(USER_LIST_KDW user_list_kdw);
+    void remove(String user_no);
 
     USER_LIST_KDW oneGet(USER_LIST_KDW user_list_kdw);
 
