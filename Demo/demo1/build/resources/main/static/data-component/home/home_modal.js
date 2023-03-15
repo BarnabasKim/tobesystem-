@@ -14,6 +14,10 @@ function modal_make() {
             "저장": function () {
                     aa();
 
+            },
+            "수정": function () {
+                modifyValue();
+
             }
         }
     });

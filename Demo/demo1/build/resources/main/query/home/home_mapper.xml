@@ -6,31 +6,45 @@
         SELECT * FROM USER_LIST_KDW
     </select>
 
-    <insert id="add">
+
+    <select id="add" resultType="org.example.home.DTO.USER_LIST_KDW">
+        EXEC SP_KDW_USER_ADD #{user_no}, #{name} , #{age}, #{number}, #{remark},#{keyword}
+    </select>
+
+<!--    <insert id="add">-->
+<!--        insert into USER_LIST_KDW(user_no,name,age,number,remark)-->
+<!--        values ( #{user_no}, #{name} , #{age}, #{number}, #{remark})-->
+<!--    </insert>-->
+
+    <insert id="add_save">
         insert into USER_LIST_KDW(user_no,name,age,number,remark)
         values ( #{user_no}, #{name} , #{age}, #{number}, #{remark})
     </insert>
 
 
-    <delete id="remove">
-        delete from USER_LIST_KDW WHERE USER_NO = #{user_no}
-    </delete>
+<!--    <delete id="remove">-->
+<!--        delete from USER_LIST_KDW WHERE USER_NO = #{user_no}-->
+<!--    </delete>-->
+
+    <select id="remove" resultType="org.example.home.DTO.USER_LIST_KDW">
+        EXEC SP_KDW_USER_DELETE2  #{idList}
+    </select>
+
+
     
-<!--    <select id="oneGet" resultType="org.example.home.DTO.USER_LIST_KDW">-->
-<!--        SELECT * FROM USER_LIST_KDW WHERE USER_NO = #{user_no}-->
-<!--    </select>-->
+    <select id="oneGet" resultType="org.example.home.DTO.USER_LIST_KDW">
+        SELECT * FROM USER_LIST_KDW WHERE USER_NO = #{user_no}
+    </select>
     
-<!--    <update id="updateAll">-->
-<!--        UPDATE USER_LIST_KDW set NAME = #{name} , AGE =#{age} , NUMBER = #{number} , REMARK = #{remark} WHERE USER_NO = #{user_no};-->
-<!--    </update>-->
+    <update id="updateAll">
+        UPDATE USER_LIST_KDW set NAME = #{name} , AGE =#{age} , NUMBER = #{number} , REMARK = #{remark} WHERE USER_NO = #{user_no};
+    </update>
 
 <!--    <update id="update_data">-->
 <!--        UPDATE JTH_LIST SET CODE = #{USER_NO}, NAME = #{name}, QT. #{qty}, REMARK = #{remark} WHERE IDX = #{idx}-->
 <!--    </update>-->
 
-<!--    <delete id="del_data">-->
-<!--        DELETE FROM JTH_LIST where IDX = #{idx}-->
-<!--    </delete>-->
+
 
 
 </mapper>

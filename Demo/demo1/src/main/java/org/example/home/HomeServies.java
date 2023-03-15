@@ -24,21 +24,28 @@ public class HomeServies {
     }
 
 
-    public void add(USER_LIST_KDW user_list_kdw) {
-        mapper.add(user_list_kdw);
+    public USER_LIST_KDW add(USER_LIST_KDW user_list_kdw) {
+       return mapper.add(user_list_kdw);
     }
+
+
+    public void add_save(USER_LIST_KDW user_list_kdw) {
+        mapper.add_save(user_list_kdw);
+    }
+//    public void updateAll(USER_LIST_KDW user_list_kdw) {
+//
+////        System.out.println(user_list_kdw.getIdList());
+//      String[] array =  user_list_kdw.getIdList().split(",");
+//      for (String key : array){
+//          System.out.println(key);
+//          mapper.remove(key);
+//      }
+//
+//    }
 
     public void remove(USER_LIST_KDW user_list_kdw) {
-
-//        System.out.println(user_list_kdw.getIdList());
-      String[] array =  user_list_kdw.getIdList().split(",");
-      for (String key : array){
-          System.out.println(key);
-          mapper.remove(key);
-      }
-
+        mapper.remove(user_list_kdw);
     }
-
 
 
     public USER_LIST_KDW oneGet(USER_LIST_KDW user_list_kdw) {
@@ -48,4 +55,8 @@ public class HomeServies {
     public void  updateAll(USER_LIST_KDW user_list_kdw) { mapper.updateAll(user_list_kdw); }
 
 }
+//@Override
+//public List<USER_LIST_KDW> getSearchList(USER_LIST_KDW user_list_kdw) throws Exception {
+//    return mapper.selectSearchList(user_list_kdw);
+//}
 

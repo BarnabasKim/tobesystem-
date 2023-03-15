@@ -2,8 +2,8 @@
 $(document).ready(function(){
     var resultColNames = ['회원번호','이름', '나이', '전화번호', '비고'];
     var resultColModel = [
-        {name: 'user_no', index:'user_no',key:true,align: 'center', width:'10%',edittype:'text'},
-        {name: 'name', index:'name',align: 'center', width:'15%',edittype:'text'},
+        {name: 'user_no', index:'user_no',key:true,align: 'center', width:'10%'},
+        {name: 'name', index:'name',align: 'center', width:'15%'},
         {name: 'age', index:'age',align: 'center', width:'15%',edittype:'text'},
         {name: 'number', index:'number',align: 'center', width:'15%',edittype:'text'},
         {name: 'remark', index:'remark',align: 'center', width:'20%',edittype:'text'}
@@ -11,14 +11,14 @@ $(document).ready(function(){
 
     $("#jqGrid").jqGrid({
         url : "/view",
-        mtype: "POST",
+        mtype: "GET",
         datatype : "JSON",
-        height: 250,
-        width: 630,
+        height: 450,
+        width: 1000,
         colNames: resultColNames,
         colModel: resultColModel,
         multiselect : true,
-        rowNum: 10,
+        rowNum: 99999,
         rownumbers: true,
         pager: "pager",
         caption: "JPGRID 게시판",
@@ -26,9 +26,10 @@ $(document).ready(function(){
     })
     modal_make1();
 })
+var keyword = "I";
 
 function check(){
-    alert('조회를 하였습니다');
+    // alert('조회를 하였습니다');
     $.ajax({
         url: "/viewGrid",
         type: "post",
@@ -48,13 +49,24 @@ function check(){
 }
 
 function modaload(){
+    keyword = "I";
     $("#dialog1").dialog("open");
 }
 
-function deleteValue1() {
-    var id1 = $("#jqGrid").getGridParam('selarrrow'); // selarrrow(행을 선택하였을때 각 id의 값을 반환
+function modaload1(){
+    keyword = "U";
+    modifyValue();
+    $("#dialog1").dialog("open");
 
-    console.log(id1);
+}
+
+function deleteValue1() {
+    keyword = "D";
+    var id1 = $("#jqGrid").getGridParam('selarrrow'); // selarrrow(행을 선택하였을때 각 id의 값을 반환
+    var gu5 = String.fromCharCode(5);
+
+
+
     if(id1.length == 0 ) {
         alert("삭제할 데이터를 선택하세요.");
         return false;
@@ -68,10 +80,10 @@ function deleteValue1() {
                 type: 'POST',
                 url: '/delete_update',
                 data: {
-                    idList:id1.join(',') //콤마를 기준으로 서비스단에서 반복
+                    idList:id1.join(gu5) //콤마를 기준으로 서비스단에서 반복
                 },
                 success: function (data) {
-                    console.log(data);
+                    // console.log(data);
                     $("#jqGrid").trigger('reloadGrid');
                 }
             });
@@ -79,67 +91,50 @@ function deleteValue1() {
     }
 }
 function modifyValue() {
-    modal_make1();
+    var id1 = $("#jqGrid").getGridParam('selarrrow'); // selarrrow(행을 선택하였을때 각 id의 값을 반환
+
+    $.ajax({
+        url : "/oneGet",
+        type : "POST",
+        // dataType : "JSON",
+        data : {user_no : id1[0]},
+        success : function(data){
+            // console.log(data)
+            var objName;
+            $(".modal_modify2").each(function (i, item){
+                objName = $(this).attr('name');
+                $(this).val(data[objName]); // 반복문 다 들어간다
+            });
+
+
+        },
+        error : function(e){
+            console.log(e)
+            // alert("통신 실패.")
+        }
+    })
+}
+
+function getSearchList() {
+    $.ajax({
+        type: 'GET',
+        url: "/getSarchList",
+        data: $("form[name=search-form]").serialize(), //form을 대상 serialize() 메소드 사용시 폼의 객체를 한번에 받을수있음
+        success : function (result){
+            $('#jqGrid > tbody').empty();
+            if(result.length>=1){
+                result.forEach(function(item){
+                    str='<tr>'
+                    str += <td>"+item.user_no.idx+"</td>;
+                    str += <td>"+item.name+"</td>;
+                    str += <td>"+item.age+"</td>;
+                    str += "<tr>"
+                    $('#jqGrid').append(str);
+                })
+            }
+        }
+    })
 }
 
 
-// if(confirm("정말로 삭제하시겠습니까?")) {
-//     // if(request.getParameter("checkbox-delete") != null )
-//     //     alert("삭제 되었습니다.")
-//
-//     window.location.href = "/delete?user_no=" + i
-// }else {
-//     window.location.href = "/view"
-//
-// }
-// $(document).ready(function() {
-//     $("#deleteRow").click(function () {
-//         deleteRow();
-//
-//
-//     });
-// })
 
-// function deleteRow() {
-//     var id = $("#user_no").getGridParam('selarrrow');
-//
-//     var data = "";
-//
-//     for (var i = 0; i < id.length; i++) {
-//         var rowdata = $("#user_no").getRowData(id[i]);
-//             data += rowdata.id +',';
-//     }
-//     if(id.length==0){
-//         alert("삭제할 Data를 선택하세요");
-//         return false;
-//     }else {
-//         if(id.length>0) {
-//             if (confirm("선택한 Data를 삭제하시겠습니까?") == flase)
-//                 return false;
-//         }
-//         $.ajax({
-//
-//             dataType: "json",
-//             type: "POST",
-//             url: "/delete",
-//             data : {
-//                 data: data
-//             },
-//
-//             success:function (response, textStatus, xhr){
-//
-//                 alert("s: " + textStatus);
-//                 $("#user_no").jqGrid('setGridParam',{
-//                     url:"/delete",
-//                         dataType: "json"
-//                 }).trigger("reloadGrid");
-//             },
-//             error:function (e){
-//
-//             }
-//
-//         });
-//
-//         }
-//
-// }

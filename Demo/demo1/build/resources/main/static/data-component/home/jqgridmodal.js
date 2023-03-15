@@ -14,40 +14,24 @@ function modal_make1() {
             "저장": function () {
                 aa();
             }
+            // ,
+            // "수정": function () {
+            //     save();
+            //
+            // }
         }
     });
 
 }
 
 function aa () {
-    // console.log((document).getElementById("user_no").value);
-    // console.log((document).getElementById("user_name").value);
-    // console.log((document).getElementById("user_age").value);
-    // console.log((document).getElementById("user_tel").value);
-    // console.log((document).getElementById("user_empty").value);
 
-    // var user_no_val = (document).getElementById("user_no").value
-    // var user_name_val = (document).getElementById("user_name").value
-    // var user_age_val = (document).getElementById("user_age").value
-    // var user_tel_val = (document).getElementById("user_tel").value
-    // var user_empty_val = (document).getElementById("user_empty").value
-    // modal_obj = {USER_NO : user_no_val, NAME : user_name_val,AGE : user_age_val,NUMBER : user_tel_val, REMARK : user_empty_val };
-
-    // var objName;
-    // var objValue;
-    // var modal_obj = {};
-    // $(".modal_modify2").each(function (i){
-    //     objName = $(this).attr("user_no");
-    //     objValue = $(this).val();
-    //     modal_obj[objName] = objValue;
-    // })
-    // console.log(modal_obj);
     var obj_data = {}
     var data_list = $(".modal_modify2")
     data_list.each(function (index, item) {
          obj_data[item.name] = $(item).val();
     });
-
+    obj_data.keyword = keyword;
 
     $.ajax({
         url: "/view_update",
@@ -60,12 +44,35 @@ function aa () {
             // $("#dialog1").addClass( "hidden" )
             $(this).dialog("close");
 
-            // location.href =  "/view";
-            // var objName;
-            // $(".board_modify").each(function (i, item){
-            //     objName = $(this).attr('name');
-            //     $(this).val(data[objName])
-            // });
+
+        },
+        error : function (request,status,error) {
+            alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
+        }
+    })
+
+}
+
+function save () {
+
+    var obj_data1 = {}
+    var data_list1 = $(".modal_modify2")
+    data_list1.each(function (index, item) {
+        obj_data1[item.name] = $(item).val();
+    });
+
+
+    $.ajax({
+        url: "/view_modified",
+        type: "POST",
+        data: obj_data1,
+        success :function(data) {
+            console.log("@@")
+            console.log(data);
+            alert("수정이 완료 되었습니다.")
+            // $("#dialog1").addClass( "hidden" )
+
+
         },
         error : function (request,status,error) {
             alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)

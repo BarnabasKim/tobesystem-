@@ -12,24 +12,21 @@ function update(data) {
         url : "/oneGet",
         type : "POST",
         dataType : "JSON",
-        data : {"user_no" : user_no},
+        data : {user_no : user_no},
         success : function(data){
-            // console.log(data)
+            console.log(data)
             var objName;
             $(".modal_modify").each(function (i, item){
                 objName = $(this).attr('name');
                 $(this).val(data[objName]); // 반복문 다 들어간다
             });
+
             // $("#user_no").val(data.user_NO);
             // $("#user_name").val(data.name);
             // $("#user_age").val(data.age);
             // $("#user_tel").val(data.number);
             // $("#user_empty").val(data.remark);
             $("#dialog").dialog('open');
-
-
-
-
         },
         error : function(){
             alert("통신 실패.")

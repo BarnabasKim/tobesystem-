@@ -52,7 +52,7 @@ public class HomeController {
 @RequestMapping(value = "/delete_update", method = RequestMethod.POST)
     public String boardDeletePro(USER_LIST_KDW user_list_kdw,Model model) {
 
-    System.out.println(user_list_kdw);
+
         servies.remove(user_list_kdw);
 
         model.addAttribute("viewAll",servies.view());
