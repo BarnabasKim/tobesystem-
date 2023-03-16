@@ -21,13 +21,19 @@ public class HomeController {
 
     @RequestMapping(value = "/")
     public String home(){
-        return "home/jqgrid";
+        return "home/project_reason";
     }
 
     @RequestMapping(value = "/view", method = RequestMethod.GET)
     public String view(Model model){
         model.addAttribute("viewAll",servies.view() );
-        return "home/jqgrid";
+        return "home/project_reason";
+    }
+
+    @RequestMapping(value = "/getAll", method = RequestMethod.GET)
+    public String getAll(Model model){
+        model.addAttribute("viewAll",servies.view() );
+        return "home/project_reason";
     }
     @PostMapping("/board/writepro")
     public String boardWritePro(Model model,HttpServletRequest req) {
@@ -46,7 +52,7 @@ public class HomeController {
 
 
         model.addAttribute("viewAll",servies.view());
-        return "home/index";
+        return "home/project_reason";
 
     }
 @RequestMapping(value = "/delete_update", method = RequestMethod.POST)
@@ -56,7 +62,7 @@ public class HomeController {
         servies.remove(user_list_kdw);
 
         model.addAttribute("viewAll",servies.view());
-        return "home/jqgrid";
+        return "home/project_reason";
 
     }
 

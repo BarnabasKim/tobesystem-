@@ -6,6 +6,14 @@
         SELECT * FROM USER_LIST_KDW
     </select>
 
+    <select id="getAll" resultType="org.example.home.DTO.SYS_REASON_CD">
+        SELECT * FROM SYS_REASON_CD
+    </select>
+
+
+
+
+
 
     <select id="add" resultType="org.example.home.DTO.USER_LIST_KDW">
         EXEC SP_KDW_USER_ADD #{user_no}, #{name} , #{age}, #{number}, #{remark},#{keyword}

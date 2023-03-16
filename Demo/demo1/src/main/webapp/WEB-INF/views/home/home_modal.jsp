@@ -31,7 +31,7 @@
 
         <div class="modal__box">
         <form>
-        <table align="center" border="3">
+        <table>
             <tr>
             <td> 회원 번호 </td>
             <td><input type="text" id="user_no" name ="user_no" class="modal_modify" size="55"></td>

@@ -32,33 +32,33 @@
 
 </style>
 <body>
-<div id="dialog1" class="modal__background1" >
-    <div class="modal__box1">
+<%--<div id="dialog1" class="modal__background1" >--%>
+<%--    <div class="modal__box1">--%>
 
-        <table>
-                <tr>
-                    <td> 회원 번호 </td>
-                    <td><input type="text" name="user_no" id="user_no" size="20" class="modal_modify2"></td>
-                </tr>
-                <tr>
-                    <td> 이름 </td>
-                    <td><input type="text"  name="name" id="name" size="20" class="modal_modify2"></td>
-                </tr>
-                <tr>
-                    <td> 나이 </td>
-                    <td><input type="text"  name="age" id="age" size="20" class="modal_modify2"></td>
-                </tr>
-                <tr>
-                    <td> 전화번호 </td>
-                    <td><input type="text"  name="number" id="number" size="20" class="modal_modify2"></td>
-                </tr>
-                <tr>
-                    <td> 비고 </td>
-                    <td><input type="text"  name="remark" id="remark"  size="20" class="modal_modify2"></td>
-                </tr>
-            </table>
-    </div>
-</div>
+<%--        <table>--%>
+<%--                <tr>--%>
+<%--                    <td> 회원 번호 </td>--%>
+<%--                    <td><input type="text" name="user_no" id="user_no" size="20" class="modal_modify2"></td>--%>
+<%--                </tr>--%>
+<%--                <tr>--%>
+<%--                    <td> 이름 </td>--%>
+<%--                    <td><input type="text"  name="name" id="name" size="20" class="modal_modify2"></td>--%>
+<%--                </tr>--%>
+<%--                <tr>--%>
+<%--                    <td> 나이 </td>--%>
+<%--                    <td><input type="text"  name="age" id="age" size="20" class="modal_modify2"></td>--%>
+<%--                </tr>--%>
+<%--                <tr>--%>
+<%--                    <td> 전화번호 </td>--%>
+<%--                    <td><input type="text"  name="number" id="number" size="20" class="modal_modify2"></td>--%>
+<%--                </tr>--%>
+<%--                <tr>--%>
+<%--                    <td> 비고 </td>--%>
+<%--                    <td><input type="text"  name="remark" id="remark"  size="20" class="modal_modify2"></td>--%>
+<%--                </tr>--%>
+<%--            </table>--%>
+<%--    </div>--%>
+<%--</div>--%>
 
-</body>
-</html>
+<%--</body>--%>
+<%--</html>--%>

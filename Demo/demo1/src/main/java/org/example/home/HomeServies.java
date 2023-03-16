@@ -3,6 +3,7 @@ package org.example.home;
 import org.Mapper.home.HomeMapper;
 
 import org.apache.catalina.User;
+import org.example.home.DTO.SYS_REASON_CD;
 import org.example.home.DTO.USER_LIST_KDW;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
@@ -23,6 +24,9 @@ public class HomeServies {
         return mapper.view();
     }
 
+    public List<SYS_REASON_CD> getAll() {
+        return mapper.getAll();
+    }
 
     public USER_LIST_KDW add(USER_LIST_KDW user_list_kdw) {
        return mapper.add(user_list_kdw);

@@ -1,12 +1,13 @@
 
 $(document).ready(function(){
-    var resultColNames = ['회원번호','이름', '나이', '전화번호', '비고'];
+    modal_start();
+
+    var resultColNames = ['작업구분','원인그룹코드', '원인그룹명', '수정일'];
     var resultColModel = [
-        {name: 'user_no', index:'user_no',key:true,align: 'center', width:'10%'},
-        {name: 'name', index:'name',align: 'center', width:'15%'},
-        {name: 'age', index:'age',align: 'center', width:'15%',edittype:'text'},
-        {name: 'number', index:'number',align: 'center', width:'15%',edittype:'text'},
-        {name: 'remark', index:'remark',align: 'center', width:'20%',edittype:'text'}
+        {name: 'reason_code', index:'reason_code',align: 'center', width:'10%'},
+        {name: 'reason_grp_code', index:'reason_grp_code',align: 'center', width:'15%'},
+        {name: 'reason_name', index:'reason_name',align: 'center', width:'15%'},
+        {name: 'create_date', index:'create_date',align: 'center', width:'15%'}
     ];
 
     $("#jqGrid").jqGrid({
@@ -21,13 +22,10 @@ $(document).ready(function(){
         rowNum: 99999,
         rownumbers: true,
         pager: "pager",
-        caption: "JPGRID 게시판",
+        caption: "원인코드 게시판",
 
     })
-    modal_make1();
 })
-var keyword = "I";
-
 function check(){
     // alert('조회를 하였습니다');
     $.ajax({
@@ -35,7 +33,6 @@ function check(){
         type: "post",
         // datatype: "json",
         success :function(data) {
-            // console.log(data);
             $("#jqGrid").setGridParam({
                 datatype : 'local',
                 data : data
@@ -49,8 +46,8 @@ function check(){
 }
 
 function modaload(){
-    keyword = "I";
     $("#dialog1").dialog("open");
+    makeTable();
 }
 
 function modaload1(){
@@ -115,48 +112,23 @@ function modifyValue() {
     })
 }
 
-$("#search").on("click",function (){
-    var data = $("#searchData").val()
-    var searchType = $("#searchType").val();;
-    var rows = $("[title = 'Record per Page']").val();
-    var postData = {'data' : data, 'searcThype' : searchType, 'rows' : rows}
-
-    rowData = null
-
-    $("#jqGrid").jqGrid("clearGridData", true);
-
-    $("#jqGrid").setGridParam({
-        datatype	: "json",
-        postData	: postData,
-        loadComplete	: function(data) {
-            console.log(data);
-        }
-    }).trigger("reloadGrid");
-})
-
-
-function getSearchList(){
-    $.ajax({
-        type: 'GET',
-        url : "/getSearchList",
-        data : $("form[name=search-form]").serialize(),
-        success : function(result){
-            //테이블 초기화
-            $('#jqGrid > tbody').empty();
-            if(result.length>=1){
-                result.forEach(function(item){
-                    str='<tr>'
-                    str += "<td>"+item.user_no+"</td>";
-                    str+="<td>"+item.name+"</td>";
-                    str+="<td>"+item.age+"</td>";
-                    str+="<td>"+item.number+"</td>";
-                    str+="</tr>"
-                    $('#jqGrid').append(str);
-                })
-            }
-        }
-    })
+function makeTable() {
+    $("#table_modal").jqGrid({
+        datatype: "local",
+        height : 350,
+        width: 630,
+        colNames: ['key','사유코드','사유명'],
+        colModel: [
+            {name: 'key', index: 'reason_code',key:true, align: 'right',hidden:true},
+            {name: 'reason_code', index: 'reason_code', align: 'right'},
+            {name: 'reason_name', index: 'reason_name', align: 'right'},
+        ],
+        caption: "모달 작업창",
+        multiselect : true,
+        rowNum: 99999,
+        rownumbers: true,
+        pager: "pager"
+    });
 }
-
 
 

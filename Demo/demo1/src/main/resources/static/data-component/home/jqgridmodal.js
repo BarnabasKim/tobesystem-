@@ -1,9 +1,18 @@
+
+$(document).ready(function(){
+    modal_start();
+});
+function modal_start() {
+    modal_make1();
+}
+
 function modal_make1() {
 
     $("#dialog1").dialog({
         modal: true,
-        width: 400,
-        height: 400,
+        width: 1000,
+        height: 1000,
+        resizeable: true,
         autoOpen: false,
         autosize: false,
         show: 'slide',
@@ -14,16 +23,10 @@ function modal_make1() {
             "저장": function () {
                 aa();
             }
-            // ,
-            // "수정": function () {
-            //     save();
-            //
-            // }
         }
+
     });
-
 }
-
 function aa () {
 
     var obj_data = {}
@@ -52,7 +55,6 @@ function aa () {
     })
 
 }
-
 function save () {
 
     var obj_data1 = {}
@@ -60,7 +62,6 @@ function save () {
     data_list1.each(function (index, item) {
         obj_data1[item.name] = $(item).val();
     });
-
 
     $.ajax({
         url: "/view_modified",
@@ -79,4 +80,37 @@ function save () {
         }
     })
 
+}
+
+
+function addRow() {
+    var row_num = $('#table_modal').getGridParam('reccount');
+
+     $("#table_modal").jqGrid('addRowData',1,{key:1,reason_code:'',reason_name:''} )
+
+
+
+    // var dynamicTable = document.getElementById('table_modal');
+    // var newRow = dynamicTable.insertRow();
+    // var cell1 = newRow.insertCell();
+    // var cell2 = newRow.insertCell();
+    // var cell3 = newRow.insertCell();
+    //
+    // cell1.innerHTML = '<input type="checkbox" name="checkboxObj" >';
+    // cell2.innerHTML = '<input type="text">';
+    // cell3.innerHTML = '<input type="text">';
+
+}
+
+function deleteRow() {
+    var table = document.getElementById('table_modal');
+    var checkboxArray = document.getElementsByName('checkboxObj');
+
+    for (var i = checkboxArray.length-1; i>=0; i--) {
+        var check = checkboxArray[i].checked;
+
+        if (check) {
+            table.deleteRow(i);
+        }
+    }
 }
