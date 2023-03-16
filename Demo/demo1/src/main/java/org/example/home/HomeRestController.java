@@ -32,30 +32,16 @@ public class HomeRestController {
 
     @RequestMapping(value = "/view_update", method = RequestMethod.POST)
     public USER_LIST_KDW add(USER_LIST_KDW user_list_kdw) {
-
-
         return servies.add(user_list_kdw);
     }
 
-//    @RequestMapping(value = "/view_modified", method = RequestMethod.POST)
-//    public void add_save(USER_LIST_KDW user_list_kdw) {
-//
-//
-//        servies.add_save(user_list_kdw);
+//    @RequestMapping(value = "/home_update", method = RequestMethod.POST)
+//    public void updateAll(USER_LIST_KDW user_list_kdw) {
+////        USER_LIST_KDW user_list_kdw = new USER_LIST_KDW();
+//        System.out.println(user_list_kdw);
+////         servies.updateAll(user_list_kdw);
 //    }
 
-    @RequestMapping(value = "/home_update", method = RequestMethod.POST)
-    public void updateAll(USER_LIST_KDW user_list_kdw) {
-//        USER_LIST_KDW user_list_kdw = new USER_LIST_KDW();
-        System.out.println(user_list_kdw);
-//         servies.updateAll(user_list_kdw);
-    }
 
-    private List<USER_LIST_KDW> getSearchList(@RequestParam("type") String type, @RequestParam("keyword") String keyword, Model model) throws Exception {
-        USER_LIST_KDW user_list_kdw = new USER_LIST_KDW();
-        user_list_kdw.setType(type);
-        user_list_kdw.setKeyword1(keyword);
-        return servies.view();
-    }
 
 }

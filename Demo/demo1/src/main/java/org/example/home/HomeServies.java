@@ -54,9 +54,7 @@ public class HomeServies {
 
     public void  updateAll(USER_LIST_KDW user_list_kdw) { mapper.updateAll(user_list_kdw); }
 
+
 }
-//@Override
-//public List<USER_LIST_KDW> getSearchList(USER_LIST_KDW user_list_kdw) throws Exception {
-//    return mapper.selectSearchList(user_list_kdw);
-//}
+
 

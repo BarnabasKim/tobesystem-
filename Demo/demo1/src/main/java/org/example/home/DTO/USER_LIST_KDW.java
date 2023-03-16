@@ -3,6 +3,8 @@ package org.example.home.DTO;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
+import java.util.List;
+
 @Data
 public class USER_LIST_KDW {
 
@@ -19,4 +21,6 @@ public class USER_LIST_KDW {
     private String type; // 검색 타입
     private String result;
     private String message;
+
+
 }

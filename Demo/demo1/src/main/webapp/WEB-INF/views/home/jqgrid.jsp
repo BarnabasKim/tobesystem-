@@ -32,15 +32,19 @@
 <body>
 <div style = "margin-top : 20px; margin-left : 15px; font-size : 12px;">
     <form name="search-form" autocomplete="off">
-    <select class = "form-control" style = "width : 10%; float : left;" id = "searchType">
-    <option value = "user_no" selected>회원번호</option>
+    <select name="keyword" class="form-control" style = "width : 10%; float : left;" id = "searchType">
+    <option selected value="">검색 내용 선택하시오</option>
+    <option value = "user_no">회원번호</option>
     <option value = "user_name">이름</option>
     <option value = "user_age">나이</option>
+    <option value = "user_no_name">회원번호/이름</option>
+    <option value = "user_no_age">회원번호/나이</option>
+    <option value = "user_all">전체</option>
     </select>
-    <input type ="text" id = "searchData" class ="form-control" style = "width : 10%; float : left; margin-bottom : 50px; margin-left : 10px;">
-    <button class = "btn btn-info btn-fill" id = "search" value = "검색 " onclick="getSearchList()" style = "float : left; margin-left : 10px; margin-right : 5px;">검색
-    </button>
+    <input type ="text" class="form-control" placeholder="검색할 내용을 적으세요" name="type" value="" style = "width : 10%; float : left; margin-bottom : 50px; margin-left : 10px;">
+    <input type="button" onclick="getSearchList()" class="btn btn-outline-primary mr-2" value="검색"></input>
     </form>
+</div>
     <button id="check-button" type="button" onclick="check()">조회</button>
     <button id="post-button" type="button" onclick="modaload()">추가</button>
     <button id="delete-button" type="button" id="user_no" onclick="deleteValue1(); ">삭제</button>

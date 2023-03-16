@@ -2,6 +2,7 @@ package org.Mapper.home;
 
 
 
+import org.apache.catalina.User;
 import org.example.home.DTO.USER_LIST_KDW;
 import org.example.home.DTO.USER_VO;
 import org.springframework.stereotype.Repository;
@@ -28,8 +29,5 @@ public interface HomeMapper {
 
     void updateAll(USER_LIST_KDW user_list_kdw);
 
+
 }
-//    public List<USER_LIST_KDW> selectSearchList(USER_LIST_KDW user_list_kdw) throws  Exception{
-//        return sqlSession.selectList("Board.selectSearchList" , boardDto);
-//    }
-//}

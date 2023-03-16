@@ -1492,3 +1492,8 @@ org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps
 2023-03-15 17:51:02 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
 2023-03-15 17:51:02 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
 2023-03-15 17:51:03 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.562 seconds (JVM running for 3.958)
+2023-03-15 17:55:40 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 17416 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-15 17:55:40 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-15 17:55:42 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-15 17:55:42 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-15 17:55:42 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.714 seconds (JVM running for 3.138)

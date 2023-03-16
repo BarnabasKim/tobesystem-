@@ -115,20 +115,42 @@ function modifyValue() {
     })
 }
 
-function getSearchList() {
+$("#search").on("click",function (){
+    var data = $("#searchData").val()
+    var searchType = $("#searchType").val();;
+    var rows = $("[title = 'Record per Page']").val();
+    var postData = {'data' : data, 'searcThype' : searchType, 'rows' : rows}
+
+    rowData = null
+
+    $("#jqGrid").jqGrid("clearGridData", true);
+
+    $("#jqGrid").setGridParam({
+        datatype	: "json",
+        postData	: postData,
+        loadComplete	: function(data) {
+            console.log(data);
+        }
+    }).trigger("reloadGrid");
+})
+
+
+function getSearchList(){
     $.ajax({
         type: 'GET',
-        url: "/getSarchList",
-        data: $("form[name=search-form]").serialize(), //form을 대상 serialize() 메소드 사용시 폼의 객체를 한번에 받을수있음
-        success : function (result){
+        url : "/getSearchList",
+        data : $("form[name=search-form]").serialize(),
+        success : function(result){
+            //테이블 초기화
             $('#jqGrid > tbody').empty();
             if(result.length>=1){
                 result.forEach(function(item){
                     str='<tr>'
-                    str += <td>"+item.user_no.idx+"</td>;
-                    str += <td>"+item.name+"</td>;
-                    str += <td>"+item.age+"</td>;
-                    str += "<tr>"
+                    str += "<td>"+item.user_no+"</td>";
+                    str+="<td>"+item.name+"</td>";
+                    str+="<td>"+item.age+"</td>";
+                    str+="<td>"+item.number+"</td>";
+                    str+="</tr>"
                     $('#jqGrid').append(str);
                 })
             }
