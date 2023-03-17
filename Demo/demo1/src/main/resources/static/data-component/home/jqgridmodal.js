@@ -84,9 +84,9 @@ function save () {
 
 
 function addRow() {
-    var row_num = $('#table_modal').getGridParam('reccount');
+    var rowId = $('#table_modal').getGridParam('reccount');
 
-     $("#table_modal").jqGrid('addRowData',1,{key:1,reason_code:'',reason_name:''} )
+     $("#table_modal").jqGrid('addRowData',rowId+1,{key:1,reason_code:'',reason_name:''} )
 
 
 
@@ -103,14 +103,8 @@ function addRow() {
 }
 
 function deleteRow() {
-    var table = document.getElementById('table_modal');
-    var checkboxArray = document.getElementsByName('checkboxObj');
-
-    for (var i = checkboxArray.length-1; i>=0; i--) {
-        var check = checkboxArray[i].checked;
-
-        if (check) {
-            table.deleteRow(i);
-        }
+    var rowId = $("#table_modal").getGridParam("selarrrow");
+    for(var i=rowId.length-1; i>=0; i--){
+        $("#table_modal").delRowData(rowId[i])
     }
 }

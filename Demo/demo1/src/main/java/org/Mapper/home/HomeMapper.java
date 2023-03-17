@@ -16,20 +16,24 @@ public interface HomeMapper {
 
     List<SYS_REASON_CD> getAll();
 
-    List<USER_LIST_KDW> view();
-
-    void addAll(USER_LIST_KDW user_list_kdw);
-
-    USER_LIST_KDW add(USER_LIST_KDW user_list_kdw);
-
-    void remove(USER_LIST_KDW ulk);
-
-    void add_save(USER_LIST_KDW user_list_kdw);
-
-    USER_LIST_KDW oneGet(USER_LIST_KDW user_list_kdw);
 
 
-    void updateAll(USER_LIST_KDW user_list_kdw);
 
+//    List<USER_LIST_KDW> view();
+//
+//
+//    void addAll(USER_LIST_KDW user_list_kdw);
+//
+//    USER_LIST_KDW add(USER_LIST_KDW user_list_kdw);
+//
+//    void remove(USER_LIST_KDW ulk);
+//
+//    void add_save(USER_LIST_KDW user_list_kdw);
+//
+//    USER_LIST_KDW oneGet(USER_LIST_KDW user_list_kdw);
+//
+//
+//    void updateAll(USER_LIST_KDW user_list_kdw);
+//
 
 }

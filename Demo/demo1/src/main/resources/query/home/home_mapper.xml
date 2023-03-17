@@ -2,32 +2,31 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.Mapper.home.HomeMapper">
 
-    <select id="view" resultType="org.example.home.DTO.USER_LIST_KDW">
-        SELECT * FROM USER_LIST_KDW
-    </select>
+<!--    <select id="view" resultType="org.example.home.DTO.USER_LIST_KDW">-->
+<!--        SELECT * FROM USER_LIST_KDW-->
+<!--    </select>-->
 
     <select id="getAll" resultType="org.example.home.DTO.SYS_REASON_CD">
-        SELECT * FROM SYS_REASON_CD
+        EXEC SP_KDW_REASON_GET #{reason_code}, #{reason_grp_code},#{reason_grp_name},#{ceate_date}
+    </select>
+
+    <select id="get_selectbox">
+
     </select>
 
 
-
-
-
-
-    <select id="add" resultType="org.example.home.DTO.USER_LIST_KDW">
-        EXEC SP_KDW_USER_ADD #{user_no}, #{name} , #{age}, #{number}, #{remark},#{keyword}
-    </select>
+<!--
+-->
 
 <!--    <insert id="add">-->
 <!--        insert into USER_LIST_KDW(user_no,name,age,number,remark)-->
 <!--        values ( #{user_no}, #{name} , #{age}, #{number}, #{remark})-->
 <!--    </insert>-->
 
-    <insert id="add_save">
-        insert into USER_LIST_KDW(user_no,name,age,number,remark)
-        values ( #{user_no}, #{name} , #{age}, #{number}, #{remark})
-    </insert>
+<!--    <insert id="add_save">-->
+<!--        insert into USER_LIST_KDW(user_no,name,age,number,remark)-->
+<!--        values ( #{user_no}, #{name} , #{age}, #{number}, #{remark})-->
+<!--    </insert>-->
 
 
 
@@ -36,19 +35,19 @@
 <!--        delete from USER_LIST_KDW WHERE USER_NO = #{user_no}-->
 <!--    </delete>-->
 
-    <select id="remove" resultType="org.example.home.DTO.USER_LIST_KDW">
-        EXEC SP_KDW_USER_DELETE2  #{idList}
-    </select>
+<!--    <select id="remove" resultType="org.example.home.DTO.USER_LIST_KDW">-->
+<!--        EXEC SP_KDW_USER_DELETE2  #{idList}-->
+<!--    </select>-->
 
 
-    
-    <select id="oneGet" resultType="org.example.home.DTO.USER_LIST_KDW">
-        SELECT * FROM USER_LIST_KDW WHERE USER_NO = #{user_no}
-    </select>
-    
-    <update id="updateAll">
-        UPDATE USER_LIST_KDW set NAME = #{name} , AGE =#{age} , NUMBER = #{number} , REMARK = #{remark} WHERE USER_NO = #{user_no};
-    </update>
+<!--    -->
+<!--    <select id="oneGet" resultType="org.example.home.DTO.USER_LIST_KDW">-->
+<!--        SELECT * FROM USER_LIST_KDW WHERE USER_NO = #{user_no}-->
+<!--    </select>-->
+<!--    -->
+<!--    <update id="updateAll">-->
+<!--        UPDATE USER_LIST_KDW set NAME = #{name} , AGE =#{age} , NUMBER = #{number} , REMARK = #{remark} WHERE USER_NO = #{user_no};-->
+<!--    </update>-->
 
 <!--    <update id="update_data">-->
 <!--        UPDATE JTH_LIST SET CODE = #{USER_NO}, NAME = #{name}, QT. #{qty}, REMARK = #{remark} WHERE IDX = #{idx}-->

@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     modal_start();
-
+    select_add();
     var resultColNames = ['작업구분','원인그룹코드', '원인그룹명', '수정일'];
     var resultColModel = [
         {name: 'reason_code', index:'reason_code',align: 'center', width:'10%'},
@@ -11,9 +11,7 @@ $(document).ready(function(){
     ];
 
     $("#jqGrid").jqGrid({
-        url : "/view",
-        mtype: "GET",
-        datatype : "JSON",
+
         height: 450,
         width: 1000,
         colNames: resultColNames,
@@ -26,24 +24,51 @@ $(document).ready(function(){
 
     })
 })
-function check(){
-    // alert('조회를 하였습니다');
+
+function select_add(){
     $.ajax({
         url: "/viewGrid",
         type: "post",
-        // datatype: "json",
+        datatype: "json",
         success :function(data) {
-            $("#jqGrid").setGridParam({
-                datatype : 'local',
-                data : data
-            }).trigger('reloadGrid');
+          console.log(data);
+
+
         },
         error : function (request,status,error) {
             alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
         }
     })
+}
+
+function check(){
+    // alert('조회를 하였습니다');
+
+    $("#jqGrid").setGridParam({
+        url : "/viewGrid",
+        mtype: "POST",
+        datatype : "JSON",
+    }).trigger('reloadGrid');
+
+
+    // $.ajax({
+    //     url: "/viewGrid",
+    //     type: "post",
+    //     // datatype: "json",
+    //     success :function(data) {
+    //         $("#jqGrid").setGridParam({
+    //             datatype : 'local',//json
+    //             data : data // Postdata
+    //         }).trigger('reloadGrid');
+    //     },
+    //     error : function (request,status,error) {
+    //         alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
+    //     }
+    // })
 
 }
+
+function 
 
 function modaload(){
     $("#dialog1").dialog("open");
@@ -61,7 +86,6 @@ function deleteValue1() {
     keyword = "D";
     var id1 = $("#jqGrid").getGridParam('selarrrow'); // selarrrow(행을 선택하였을때 각 id의 값을 반환
     var gu5 = String.fromCharCode(5);
-
 
 
     if(id1.length == 0 ) {
@@ -119,15 +143,16 @@ function makeTable() {
         width: 630,
         colNames: ['key','사유코드','사유명'],
         colModel: [
-            {name: 'key', index: 'reason_code',key:true, align: 'right',hidden:true},
-            {name: 'reason_code', index: 'reason_code', align: 'right'},
-            {name: 'reason_name', index: 'reason_name', align: 'right'},
+            {name: 'key', index: 'key',key:true, align: 'right',hidden:true},
+            {name: 'reason_code', index: 'reason_code', align: 'right',editable :true},
+            {name: 'reason_name', index: 'reason_name', align: 'right',editable :true},
         ],
         caption: "모달 작업창",
         multiselect : true,
         rowNum: 99999,
         rownumbers: true,
-        pager: "pager"
+        pager: "pager",
+        cellEdit: true
     });
 }
 
