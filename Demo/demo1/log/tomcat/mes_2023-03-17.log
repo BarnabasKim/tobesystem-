@@ -128,3 +128,9 @@ Action:
 
 Identify and stop the process that's listening on port 8091 or configure this application to listen on another port.
 
+2023-03-17 13:20:26 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 5184 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-17 13:20:26 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-17 13:20:28 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-17 13:20:28 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-17 13:20:28 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.078 seconds (JVM running for 5.218)
+2023-03-17 13:22:33 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]

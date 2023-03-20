@@ -6,13 +6,14 @@
 <!--        SELECT * FROM USER_LIST_KDW-->
 <!--    </select>-->
 
-    <select id="getAll" resultType="org.example.home.DTO.SYS_REASON_CD">
-        EXEC SP_KDW_REASON_GET #{reason_code}, #{reason_grp_code},#{reason_grp_name},#{ceate_date}
+    <select id="viewAll" resultType="org.example.home.DTO.SYS_REASON_SUB_CD">
+        EXEC SP_KDW_REASON_GET #{searchType}
     </select>
 
-    <select id="get_selectbox">
-
+    <select id="get_selectbox" resultType="org.example.home.DTO.SYS_REASON_CD">
+        SELECT REASON_CODE, REASON_NAME FROM SYS_REASON_CD
     </select>
+    
 
 
 <!--

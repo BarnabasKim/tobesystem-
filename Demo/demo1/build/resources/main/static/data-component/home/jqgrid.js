@@ -1,7 +1,9 @@
 
 $(document).ready(function(){
+
+    getSelectBox();
     modal_start();
-    select_add();
+    // select_add();
     var resultColNames = ['작업구분','원인그룹코드', '원인그룹명', '수정일'];
     var resultColModel = [
         {name: 'reason_code', index:'reason_code',align: 'center', width:'10%'},
@@ -25,52 +27,30 @@ $(document).ready(function(){
     })
 })
 
-function select_add(){
-    $.ajax({
-        url: "/viewGrid",
-        type: "post",
-        datatype: "json",
-        success :function(data) {
-          console.log(data);
 
 
-        },
-        error : function (request,status,error) {
-            alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
-        }
-    })
-}
-
-function check(){
-    // alert('조회를 하였습니다');
-
+function check() {
     $("#jqGrid").setGridParam({
-        url : "/viewGrid",
-        mtype: "POST",
-        datatype : "JSON",
+        url: "get_reason_sub_list",
+        postData: {searchType:$("#search_things").val()},
+        datatype: "json",
+        mtype: "post"
     }).trigger('reloadGrid');
 
 
-    // $.ajax({
-    //     url: "/viewGrid",
-    //     type: "post",
-    //     // datatype: "json",
-    //     success :function(data) {
-    //         $("#jqGrid").setGridParam({
-    //             datatype : 'local',//json
-    //             data : data // Postdata
-    //         }).trigger('reloadGrid');
-    //     },
-    //     error : function (request,status,error) {
-    //         alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
-    //     }
-    // })
 
 }
-
 function modaload(){
+    var selected_code = $("#search_things option:selected").val();
+    var selected_reasoncode = $("#search_things option:selected").text();
+    // console.log($("#search_things option:selected").val())
+    // console.log($("#search_things option:selected").text())
+    $('input[name=code]').attr('value',selected_code);
+    $('input[name=modal_work]').attr('value',selected_reasoncode);
+
     $("#dialog1").dialog("open");
     makeTable();
+
 }
 
 function modaload1(){
@@ -139,7 +119,7 @@ function makeTable() {
         datatype: "local",
         height : 350,
         width: 630,
-        colNames: ['key','사유코드','사유명'],
+        colNames: ['key','원인코드','사유명'],
         colModel: [
             {name: 'key', index: 'key',key:true, align: 'right',hidden:true},
             {name: 'reason_code', index: 'reason_code', align: 'right',editable :true},
@@ -153,5 +133,27 @@ function makeTable() {
         cellEdit: true
     });
 }
+
+function getSelectBox() {
+    $("#search_things").append($("<option></option>").val("").text("전체"));
+     $(document).ready(function(){
+         $.ajax({
+             url: "getReasons",
+             type: "GET",
+             success: function (data) {
+
+                 var selectBox = $('#search_things');
+                 $.each(data, function(index, option) {
+                     var optionElement = $('<option>')
+                         .attr('value', option.reason_code)
+                         .text(option.reason_name);
+                     selectBox.append(optionElement);
+             });
+         }
+     })
+
+    });
+}
+
 
 

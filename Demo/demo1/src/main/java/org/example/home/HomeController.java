@@ -24,17 +24,14 @@ public class HomeController {
         return "home/project_reason";
     }
 
-    @RequestMapping(value = "/viewGrid", method = RequestMethod.GET)
-    public String view(Model model) {
-        model.addAttribute("viewAll", servies.getAll());
-        return "home/project_reason";
-    }
+//    @RequestMapping(value = "/viewGrid", method = RequestMethod.GET)
+//    public String view(Model model) {
+//        model.addAttribute("viewAll", servies.getAll());
+//        return "home/project_reason";
+//    }
 
-    @RequestMapping(value = "/getAll", method = RequestMethod.GET)
-    public String getAll(Model model) {
-        model.addAttribute("viewAll", servies.getAll());
-        return "home/project_reason";
-    }
+
+
 }
 //    @PostMapping("/board/writepro")
 //    public String boardWritePro(Model model,HttpServletRequest req) {
