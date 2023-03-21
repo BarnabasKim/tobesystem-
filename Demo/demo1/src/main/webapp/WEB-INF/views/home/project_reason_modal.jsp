@@ -32,11 +32,11 @@
         <legend>작업확인창</legend>
            <input type="hidden" name="code">
         <label for="modal_work">작업구분</label>
-        <input type="text" id="modal_work" name="modal_work" class="modal_work_get" value="">
+        <input type="text" id="modal_work" name="reason_code" class="modal_work_get" value="">
         <label for="modal_grp_code">원인그룹코드</label>
-        <input type="text" id="modal_grp_code" name="modal_grp_code" class="modal_work_get" value="">>
+        <input type="text" id="modal_grp_code" name="reason_grp_code" class="modal_work_get" value="">>
         <label for="modal_grp_name">원인그룹명</label>
-        <input type="text" id="modal_grp_name" name="modal_grp_name" class="modal_work_get" value="">>
+        <input type="text" id="modal_grp_name" name="reason_name" class="modal_work_get" value="">>
        </fieldset>
    </div>
     <div class="modal-header">

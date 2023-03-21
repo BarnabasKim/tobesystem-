@@ -41,13 +41,13 @@ function check() {
 
 }
 function modaload(){
-    var selected_code = $("#search_things option:selected").val();
-    var selected_reasoncode = $("#search_things option:selected").text();
+    var selected_code = $("#search_things option:selected").text();
+    var selected_reasoncode = $("#search_things option:selected").val();
 
     // console.log($("#search_things option:selected").val())
     // console.log($("#search_things option:selected").text())
     $('input[name=code]').attr('value',selected_code);
-    $('input[name=modal_work]').attr('value',selected_reasoncode);
+    $('input[name=reason_code]').attr('value',selected_reasoncode);
 
     $("#dialog1").dialog("open");
     makeTable();
@@ -65,7 +65,10 @@ function deleteValue1() {
     keyword = "D";
     var id1 = $("#jqGrid").getGridParam('selarrrow'); // selarrrow(행을 선택하였을때 각 id의 값을 반환
     var gu5 = String.fromCharCode(5);
+    var obj_data = {}
 
+    obj_data.keyword = keyword;
+    obj_data.list = id1.join(gu5);
 
     if(id1.length == 0 ) {
         alert("삭제할 데이터를 선택하세요.");
@@ -79,9 +82,7 @@ function deleteValue1() {
                 dataType: 'text',
                 type: 'POST',
                 url: '/delete_update',
-                data: {
-                    idList:id1.join(gu5) //콤마를 기준으로 서비스단에서 반복
-                },
+                data: obj_data,
                 success: function (data) {
                     // console.log(data);
                     $("#jqGrid").trigger('reloadGrid');
@@ -131,7 +132,8 @@ function makeTable() {
         rowNum: 99999,
         rownumbers: true,
         pager: "pager",
-        cellEdit: true
+        cellEdit: true,
+        cellsubmit:'clientArray'
     });
 }
 

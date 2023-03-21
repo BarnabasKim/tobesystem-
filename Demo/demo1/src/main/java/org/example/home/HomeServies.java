@@ -4,6 +4,7 @@ import org.Mapper.home.HomeMapper;
 
 import org.apache.catalina.User;
 import org.example.home.DTO.SYS_REASON_CD;
+import org.example.home.DTO.SYS_REASON_SUB2_CD;
 import org.example.home.DTO.SYS_REASON_SUB_CD;
 import org.example.home.DTO.USER_LIST_KDW;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,15 +25,24 @@ public class HomeServies {
 //        return mapper.view();
 //    }
 
-   public List<SYS_REASON_SUB_CD> viewAll(SYS_REASON_SUB_CD list) {
-       return mapper.viewAll(list);
-   }
+    public List<SYS_REASON_SUB_CD> viewAll(SYS_REASON_SUB_CD list) {
+        return mapper.viewAll(list);
+    }
 
     public List<SYS_REASON_CD> get_selectbox() {
         return mapper.get_selectbox();
     }
-}
 
+
+    public void getList(SYS_REASON_SUB2_CD sys_reason_sub2_cd) {
+        mapper.getList(sys_reason_sub2_cd);
+    }
+
+    public void remove(SYS_REASON_SUB_CD sys_reason_sub_cd) {
+
+            mapper.remove(sys_reason_sub_cd);
+        }
+    }
 
 
 //    public USER_LIST_KDW add(USER_LIST_KDW user_list_kdw) {
@@ -55,9 +65,7 @@ public class HomeServies {
 ////
 ////    }
 
-//    public void remove(USER_LIST_KDW user_list_kdw) {
-//        mapper.remove(user_list_kdw);
-//    }
+
 //
 //
 //    public USER_LIST_KDW oneGet(USER_LIST_KDW user_list_kdw) {

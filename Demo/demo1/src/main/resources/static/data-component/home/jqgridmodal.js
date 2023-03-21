@@ -16,38 +16,52 @@ function modal_make1() {
         autoOpen: false,
         autosize: false,
         show: 'slide',
+        cellEdit : true,
         buttons: {
             "취소": function () {
                 $(this).dialog("close"); //dialog 닫기 메소드 실행
             },
             "저장": function () {
                 aa();
+                // save();
             }
         }
 
     });
 }
 function aa () {
-
+    var keyword = 'I'
     var obj_data = {}
-    var data_list = $(".modal_modify2")
+    var data_list = $(".modal_work_get")
+    var gu5 = String.fromCharCode(5);
+    var id1 = $("#table_modal").getGridParam('selarrrow');
+    var grid = $("#table_modal")
+    var rowData = grid.jqGrid('getRowData');
+
     data_list.each(function (index, item) {
          obj_data[item.name] = $(item).val();
     });
+
+    // var data = {
+    //     idList: id1.join(gu5),
+    //     obj_data : obj_data,
+    //     keyword: keyword
+    // };
+
     obj_data.keyword = keyword;
+    obj_data.list = id1.join(gu5);
+    obj_data.rowData = rowData;
+
+    console.log(obj_data);
 
     $.ajax({
         url: "/view_update",
         type: "POST",
         data: obj_data,
         success :function(data) {
-            console.log("@@")
             console.log(data);
-            alert("수정이 완료 되었습니다.")
+            $("#table_modal").trigger('reloadGrid');
             // $("#dialog1").addClass( "hidden" )
-            $(this).dialog("close");
-
-
         },
         error : function (request,status,error) {
             alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
@@ -58,7 +72,7 @@ function aa () {
 function save () {
 
     var obj_data1 = {}
-    var data_list1 = $(".modal_modify2")
+    var data_list1 = $(".modal_work_get")
     data_list1.each(function (index, item) {
         obj_data1[item.name] = $(item).val();
     });

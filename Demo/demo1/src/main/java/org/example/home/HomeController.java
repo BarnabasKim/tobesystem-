@@ -1,14 +1,13 @@
 package org.example.home;
 
 
+import org.example.home.DTO.SYS_REASON_SUB2_CD;
+import org.example.home.DTO.SYS_REASON_SUB_CD;
 import org.example.home.DTO.USER_LIST_KDW;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -24,12 +23,24 @@ public class HomeController {
         return "home/project_reason";
     }
 
-//    @RequestMapping(value = "/viewGrid", method = RequestMethod.GET)
-//    public String view(Model model) {
-//        model.addAttribute("viewAll", servies.getAll());
-//        return "home/project_reason";
-//    }
 
+    @RequestMapping(value = "/view_update", method = RequestMethod.POST)
+    public String boardSavePro( SYS_REASON_SUB2_CD sys_reason_sub2_cd) {
+        System.out.println(sys_reason_sub2_cd);
+
+    servies.getList(sys_reason_sub2_cd);
+
+    return "home/project_reason";
+
+}
+    @RequestMapping(value = "delete_update", method = RequestMethod.POST)
+    public String deleteTable(SYS_REASON_SUB_CD sys_reason_sub_cd) {
+
+        servies.remove(sys_reason_sub_cd);
+
+        System.out.println(sys_reason_sub_cd);
+        return "home/project_reason";
+    }
 
 
 }
@@ -53,16 +64,7 @@ public class HomeController {
 //        return "home/project_reason";
 //
 //    }
-//@RequestMapping(value = "/delete_update", method = RequestMethod.POST)
-//    public String boardDeletePro(USER_LIST_KDW user_list_kdw,Model model) {
-//
-//
-//        servies.remove(user_list_kdw);
-//
-//        model.addAttribute("viewAll",servies.view());
-//        return "home/project_reason";
-//
-//    }
+
 //
 //
 //}

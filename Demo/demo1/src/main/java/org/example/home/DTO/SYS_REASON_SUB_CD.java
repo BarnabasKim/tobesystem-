@@ -14,5 +14,11 @@ public class SYS_REASON_SUB_CD {
 
     private String create_date;
 
+    private String keyword;
+
+    private String list;
+
     private String searchType;
+
+
 }
