@@ -14,8 +14,8 @@
         SELECT REASON_CODE, REASON_NAME FROM SYS_REASON_CD
     </select>
     
-    <select id="getList">
-        EXEC SP_KDW_REASON_SAVE #{reason_code}, #{reason_grp_code} , #{reason_name}, #{keyword}, #{list}
+    <select id="getList" resultType="org.example.home.DTO.SYS_REASON_SUB_CD">
+        EXEC SP_KDW_REASON_SAVE #{reason_code}, #{reason_grp_code} , #{reason_grp_name}, #{keyword}, #{list}
     </select>
 
     <select id="remove" resultType="org.example.home.DTO.SYS_REASON_SUB_CD">

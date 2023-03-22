@@ -32,15 +32,24 @@ function modal_make1() {
 function aa () {
     var keyword = 'I'
     var obj_data = {}
-    var data_list = $(".modal_work_get")
+    var data_list = $(".modal_work_get");
+    var list=[];
+
     var gu5 = String.fromCharCode(5);
+    var gu4 = String.fromCharCode(4);
     var id1 = $("#table_modal").getGridParam('selarrrow');
-    var grid = $("#table_modal")
+    var grid = $("#table_modal");
     var rowData = grid.jqGrid('getRowData');
 
     data_list.each(function (index, item) {
-         obj_data[item.name] = $(item).val();
+        obj_data[item.name] = $(item).val();
     });
+
+
+    for (var i = 0; i < rowData.length; i++) {
+        list.push(rowData[i].reason_code2+gu4+rowData[i].reason_name);
+    //     obj_data[rowData[i].id] = rowData[i];
+    }
 
     // var data = {
     //     idList: id1.join(gu5),
@@ -49,8 +58,7 @@ function aa () {
     // };
 
     obj_data.keyword = keyword;
-    obj_data.list = id1.join(gu5);
-    obj_data.rowData = rowData;
+    obj_data.list = list.join(gu5);
 
     console.log(obj_data);
 
@@ -60,7 +68,14 @@ function aa () {
         data: obj_data,
         success :function(data) {
             console.log(data);
-            $("#table_modal").trigger('reloadGrid');
+            if(data.result =="NG"){
+                alert(data.message);
+            } else {
+                $("#table_modal").dialog("close");
+                // $("#table_modal").trigger('reloadGrid');
+            }
+
+
             // $("#dialog1").addClass( "hidden" )
         },
         error : function (request,status,error) {
@@ -99,10 +114,7 @@ function save () {
 
 function addRow() {
     var rowId = $('#table_modal').getGridParam('reccount');
-
-     $("#table_modal").jqGrid('addRowData',rowId+1,{key:1,reason_code:'',reason_name:''} )
-
-
+     $("#table_modal").jqGrid('addRowData',rowId+1,{key:rowId,reason_code:'',reason_name:''} )
 
     // var dynamicTable = document.getElementById('table_modal');
     // var newRow = dynamicTable.insertRow();
@@ -121,4 +133,5 @@ function deleteRow() {
     for(var i=rowId.length-1; i>=0; i--){
         $("#table_modal").delRowData(rowId[i])
     }
+
 }

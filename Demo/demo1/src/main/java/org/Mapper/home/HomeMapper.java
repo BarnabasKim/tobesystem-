@@ -16,7 +16,8 @@ public interface HomeMapper {
 
     List<SYS_REASON_CD> get_selectbox();
 
-    SYS_REASON_SUB_CD getList(SYS_REASON_SUB2_CD sys_reason_sub2_cd);
+    SYS_REASON_SUB_CD getList(SYS_REASON_SUB_CD sys_reason_sub_cd);
+//    SYS_REASON_SUB2_CD getList(SYS_REASON_SUB2_CD sys_reason_sub2_cd);
 
      void remove(SYS_REASON_SUB_CD sys_reason_sub_cd);
 

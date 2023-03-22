@@ -36,7 +36,7 @@
         <label for="modal_grp_code">원인그룹코드</label>
         <input type="text" id="modal_grp_code" name="reason_grp_code" class="modal_work_get" value="">>
         <label for="modal_grp_name">원인그룹명</label>
-        <input type="text" id="modal_grp_name" name="reason_name" class="modal_work_get" value="">>
+        <input type="text" id="modal_grp_name" name="reason_grp_name" class="modal_work_get" value="">>
        </fieldset>
    </div>
     <div class="modal-header">

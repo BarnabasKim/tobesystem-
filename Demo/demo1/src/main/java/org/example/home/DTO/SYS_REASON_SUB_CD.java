@@ -8,6 +8,8 @@ public class SYS_REASON_SUB_CD {
     private String reason_code;
     private String reason_name;
 
+    private String reason_code2;
+
     private String reason_grp_code;
 
     private String reason_grp_name;
@@ -21,4 +23,6 @@ public class SYS_REASON_SUB_CD {
     private String searchType;
 
 
+    private String result;
+    private String message;
 }

@@ -29,6 +29,11 @@ public class HomeRestController {
         return servies.viewAll(vo);
     }
 
+    @RequestMapping(value = "/view_update", method = RequestMethod.POST)
+    public SYS_REASON_SUB_CD boardSavePro( SYS_REASON_SUB_CD sys_reason_sub_cd) {
+        return servies.getList(sys_reason_sub_cd);
+    }
+
 
 
 

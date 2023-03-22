@@ -34,8 +34,8 @@ public class HomeServies {
     }
 
 
-    public void getList(SYS_REASON_SUB2_CD sys_reason_sub2_cd) {
-        mapper.getList(sys_reason_sub2_cd);
+    public SYS_REASON_SUB_CD getList(SYS_REASON_SUB_CD sys_reason_sub_cd) {
+        return mapper.getList(sys_reason_sub_cd);
     }
 
     public void remove(SYS_REASON_SUB_CD sys_reason_sub_cd) {

@@ -24,15 +24,15 @@ public class HomeController {
     }
 
 
-    @RequestMapping(value = "/view_update", method = RequestMethod.POST)
-    public String boardSavePro( SYS_REASON_SUB2_CD sys_reason_sub2_cd) {
-        System.out.println(sys_reason_sub2_cd);
-
-    servies.getList(sys_reason_sub2_cd);
-
-    return "home/project_reason";
-
-}
+//    @RequestMapping(value = "/view_update", method = RequestMethod.POST)
+//    public String boardSavePro( SYS_REASON_SUB_CD sys_reason_sub_cd) {
+//
+//        System.out.println(sys_reason_sub_cd);
+//        System.out.println(servies.getList(sys_reason_sub_cd));
+//
+//    return "home/project_reason";
+//
+//}
     @RequestMapping(value = "delete_update", method = RequestMethod.POST)
     public String deleteTable(SYS_REASON_SUB_CD sys_reason_sub_cd) {
 

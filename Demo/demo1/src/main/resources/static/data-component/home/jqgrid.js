@@ -124,7 +124,7 @@ function makeTable() {
         colNames: ['key','원인코드','사유명'],
         colModel: [
             {name: 'key', index: 'key',key:true, align: 'right',hidden:true},
-            {name: 'reason_code', index: 'reason_code', align: 'right',editable :true},
+            {name: 'reason_code2', index: 'reason_code2', align: 'right',editable :true},
             {name: 'reason_name', index: 'reason_name', align: 'right',editable :true},
         ],
         caption: "모달 작업창",
@@ -133,7 +133,13 @@ function makeTable() {
         rownumbers: true,
         pager: "pager",
         cellEdit: true,
-        cellsubmit:'clientArray'
+        cellsubmit:'clientArray',
+        afterEditCell:function(rowid, cellname, value, iRow, iCol){
+            $("#"+rowid+"_"+cellname).blur(function(){
+                $("#table_modal").jqGrid("saveCell",iRow,iCol);
+            });
+        },
+
     });
 }
 

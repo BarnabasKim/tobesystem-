@@ -8,5 +8,4 @@ public class SYS_REASON_CD {
     private String reason_name;
 
 
-
 }
