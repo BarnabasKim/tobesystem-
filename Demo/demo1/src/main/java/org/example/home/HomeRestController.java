@@ -1,6 +1,7 @@
 package org.example.home;
 
 import org.example.home.DTO.SYS_REASON_CD;
+import org.example.home.DTO.SYS_REASON_SUB2_CD;
 import org.example.home.DTO.SYS_REASON_SUB_CD;
 import org.example.home.DTO.USER_LIST_KDW;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,16 @@ public class HomeRestController {
     @RequestMapping(value = "/view_update", method = RequestMethod.POST)
     public SYS_REASON_SUB_CD boardSavePro( SYS_REASON_SUB_CD sys_reason_sub_cd) {
         return servies.getList(sys_reason_sub_cd);
+    }
+
+    @RequestMapping(value = "/get_subTable", method = RequestMethod.POST)
+    public List<SYS_REASON_SUB2_CD> get_subTable(SYS_REASON_SUB2_CD sys_reason_sub2_cd) {
+        return servies.get_subTable(sys_reason_sub2_cd);
+    }
+    @RequestMapping(value = "/modal_IU", method = RequestMethod.POST)
+    public void updateAll(SYS_REASON_SUB_CD sys_reason_sub_cd) {
+
+        servies.updateAll(sys_reason_sub_cd);
     }
 
 

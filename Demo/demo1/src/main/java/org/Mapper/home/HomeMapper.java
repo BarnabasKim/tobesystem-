@@ -21,6 +21,10 @@ public interface HomeMapper {
 
      void remove(SYS_REASON_SUB_CD sys_reason_sub_cd);
 
+    List<SYS_REASON_SUB2_CD> get_subTable(SYS_REASON_SUB2_CD sys_reason_sub2_cd);
+
+    SYS_REASON_SUB_CD updateAll(SYS_REASON_SUB_CD sys_reason_sub_cd);
+
 
 
 

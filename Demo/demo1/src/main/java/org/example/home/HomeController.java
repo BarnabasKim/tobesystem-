@@ -33,7 +33,7 @@ public class HomeController {
 //    return "home/project_reason";
 //
 //}
-    @RequestMapping(value = "delete_update", method = RequestMethod.POST)
+    @RequestMapping(value = "delData", method = RequestMethod.POST)
     public String deleteTable(SYS_REASON_SUB_CD sys_reason_sub_cd) {
 
         servies.remove(sys_reason_sub_cd);

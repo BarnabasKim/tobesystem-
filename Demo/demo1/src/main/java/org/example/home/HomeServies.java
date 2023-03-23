@@ -42,7 +42,18 @@ public class HomeServies {
 
             mapper.remove(sys_reason_sub_cd);
         }
+
+    public List<SYS_REASON_SUB2_CD> get_subTable(SYS_REASON_SUB2_CD sys_reason_sub2_cd) {
+        return mapper.get_subTable(sys_reason_sub2_cd);
     }
+
+    public SYS_REASON_SUB_CD updateAll(SYS_REASON_SUB_CD sys_reason_sub_cd) {
+        return mapper.updateAll(sys_reason_sub_cd);
+    }
+
+    }
+
+
 
 
 //    public USER_LIST_KDW add(USER_LIST_KDW user_list_kdw) {

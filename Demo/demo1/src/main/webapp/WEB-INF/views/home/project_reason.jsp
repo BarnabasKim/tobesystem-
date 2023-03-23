@@ -35,7 +35,7 @@
 </div>
 <button id="check-button" type="button" onclick="check()">조회</button>
 <button id="post-button" type="button" onclick="modaload()">추가</button>
-<button id="delete-button" type="button" id="user_no" onclick="deleteValue1(); ">삭제</button>
+<button id="delete-button" type="button" onclick="deleteValue1(); ">삭제</button>
 
   <table id="jqGrid">
     <div id="pager"></div>

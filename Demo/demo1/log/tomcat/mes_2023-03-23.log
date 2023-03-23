@@ -1,0 +1,493 @@
+2023-03-23 08:48:33 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 18116 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 08:48:33 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 08:48:34 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 08:48:34 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 08:48:34 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.666 seconds (JVM running for 4.739)
+2023-03-23 08:52:43 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 08:52:43 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 08:52:43 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 11:46:51 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 11:46:51 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 11:46:58 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 10572 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 11:46:58 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 11:47:00 [WARN ] [AbstractApplicationContext.java]refresh(558) : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeController': Unsatisfied dependency expressed through field 'servies'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeServies': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeMapper' defined in file [D:\project\Demo\demo1\build\classes\java\main\org\Mapper\home\HomeMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in org.example.mainApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+2023-03-23 11:47:00 [ERROR] [SpringApplication.java]reportFailure(826) : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeController': Unsatisfied dependency expressed through field 'servies'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeServies': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeMapper' defined in file [D:\project\Demo\demo1\build\classes\java\main\org\Mapper\home\HomeMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in org.example.mainApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.example.mainApplication.main(mainApplication.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeServies': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeMapper' defined in file [D:\project\Demo\demo1\build\classes\java\main\org\Mapper\home\HomeMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in org.example.mainApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeMapper' defined in file [D:\project\Demo\demo1\build\classes\java\main\org\Mapper\home\HomeMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in org.example.mainApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1533)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in org.example.mainApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1518)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 61 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616)
+	at org.example.mainApplication.sqlSessionFactory(mainApplication.java:53)
+	at org.example.mainApplication$$EnhancerBySpringCGLIB$$ae6dcc88.CGLIB$sqlSessionFactory$2(<generated>)
+	at org.example.mainApplication$$EnhancerBySpringCGLIB$$ae6dcc88$$FastClassBySpringCGLIB$$9b53e582.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.example.mainApplication$$EnhancerBySpringCGLIB$$ae6dcc88.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:594)
+	... 75 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:102)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	... 77 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.example.home.DTO.SYS_REASON_SUB_CD2'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 81 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: org.example.home.DTO.SYS_REASON_SUB_CD2
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 83 common frames omitted
+2023-03-23 11:48:43 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 15648 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 11:48:43 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 11:48:45 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 11:48:45 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 11:48:45 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.297 seconds (JVM running for 3.027)
+2023-03-23 11:48:55 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 11:48:55 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 11:48:55 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 12:41:53 [WARN ] [HikariPool.java]run(787) : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m26s868ms297µs300ns).
+2023-03-23 14:36:30 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 14:36:30 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 14:36:36 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 13376 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 14:36:36 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 14:36:38 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 14:36:38 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 14:36:38 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.096 seconds (JVM running for 2.737)
+2023-03-23 14:37:59 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 14:37:59 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 14:37:59 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 14:50:31 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 14:51:07 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 14:53:17 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 14:57:14 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 14:59:14 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 15:00:34 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 15:02:06 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 15:02:06 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 15:02:11 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 7924 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 15:02:11 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 15:02:13 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 15:02:13 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 15:02:13 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.303 seconds (JVM running for 2.831)
+2023-03-23 15:02:37 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 15:02:37 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 15:02:37 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 15:03:20 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 15:04:11 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 15:04:37 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 15:05:48 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 15:08:16 [WARN ] [AbstractHandlerExceptionResolver.java]logException(199) : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-23 15:15:32 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 15:15:32 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 15:15:35 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 4092 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 15:15:35 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 15:15:37 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 15:15:37 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 15:15:37 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.368 seconds (JVM running for 3.725)
+2023-03-23 15:16:32 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 15:16:32 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 15:16:32 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 15:27:34 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 15:27:34 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 15:27:37 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 1572 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 15:27:37 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 15:27:38 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 15:27:38 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 15:27:38 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.657 seconds (JVM running for 2.777)
+2023-03-23 15:27:51 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 15:27:51 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 15:27:51 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 16:04:15 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 16:04:15 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 16:04:18 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 16780 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 16:04:18 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 16:04:19 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 16:04:19 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 16:04:19 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.706 seconds (JVM running for 2.311)
+2023-03-23 16:04:21 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 16:04:21 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 16:04:21 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 16:45:14 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 16:45:14 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 16:45:17 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 15308 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 16:45:17 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 16:45:18 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 16:45:18 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 16:45:18 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.808 seconds (JVM running for 2.746)
+2023-03-23 16:45:28 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 16:45:28 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 16:45:28 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 16:57:10 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 16:57:10 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 16:57:18 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 1572 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 16:57:18 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 16:57:19 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 16:57:19 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 16:57:19 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.746 seconds (JVM running for 2.251)
+2023-03-23 16:57:37 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 16:57:37 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 16:57:38 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 17:32:15 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 17:32:15 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 17:32:18 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 15440 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 17:32:18 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 17:32:20 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:32:20 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:32:20 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.051 seconds (JVM running for 2.67)
+2023-03-23 17:32:36 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 17:32:36 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 17:32:36 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 17:33:27 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 17:33:27 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 17:33:30 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 15524 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 17:33:30 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 17:33:32 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:33:32 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:33:32 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 2.042 seconds (JVM running for 2.593)
+2023-03-23 17:33:33 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 17:33:33 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 17:33:33 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 17:36:58 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 17:36:58 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 17:37:03 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 19224 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 17:37:03 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 17:37:05 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:37:05 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:37:05 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.678 seconds (JVM running for 2.756)
+2023-03-23 17:37:10 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 17:37:10 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 17:37:10 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 17:37:16 [ERROR] [DirectJDKLog.java]log(175) : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 프로시저 또는 함수 SP_KDW_REASON_SUB_DEL에 너무 많은 인수가 지정되었습니다.
+### The error may exist in file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: EXEC SP_KDW_REASON_SUB_DEL ?, ? , ?
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 프로시저 또는 함수 SP_KDW_REASON_SUB_DEL에 너무 많은 인수가 지정되었습니다.
+; uncategorized SQLException; SQL state [S0002]; error code [8144]; 프로시저 또는 함수 SP_KDW_REASON_SUB_DEL에 너무 많은 인수가 지정되었습니다.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: 프로시저 또는 함수 SP_KDW_REASON_SUB_DEL에 너무 많은 인수가 지정되었습니다.] with root cause
+com.microsoft.sqlserver.jdbc.SQLServerException: 프로시저 또는 함수 SP_KDW_REASON_SUB_DEL에 너무 많은 인수가 지정되었습니다.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1624)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:594)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7194)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:2979)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:248)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:223)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:505)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy70.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy71.remove(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy72.remove(Unknown Source)
+	at org.example.home.HomeServies.remove(HomeServies.java:43)
+	at org.example.home.HomeController.deleteTable(HomeController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-23 17:37:37 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 17:37:37 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 17:37:41 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 6992 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 17:37:41 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 17:37:42 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:37:42 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:37:43 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.709 seconds (JVM running for 2.231)
+2023-03-23 17:37:48 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 17:37:48 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 17:37:48 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 17:37:54 [ERROR] [DirectJDKLog.java]log(175) : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 프로시저 또는 함수 'SP_KDW_REASON_SUB_DEL'에 매개 변수 '@LIST'이(가) 필요하지만 제공되지 않았습니다.
+### The error may exist in file [D:\project\Demo\demo1\build\resources\main\query\home\home_mapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: EXEC SP_KDW_REASON_SUB_DEL
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 프로시저 또는 함수 'SP_KDW_REASON_SUB_DEL'에 매개 변수 '@LIST'이(가) 필요하지만 제공되지 않았습니다.
+; uncategorized SQLException; SQL state [S0004]; error code [201]; 프로시저 또는 함수 'SP_KDW_REASON_SUB_DEL'에 매개 변수 '@LIST'이(가) 필요하지만 제공되지 않았습니다.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: 프로시저 또는 함수 'SP_KDW_REASON_SUB_DEL'에 매개 변수 '@LIST'이(가) 필요하지만 제공되지 않았습니다.] with root cause
+com.microsoft.sqlserver.jdbc.SQLServerException: 프로시저 또는 함수 'SP_KDW_REASON_SUB_DEL'에 매개 변수 '@LIST'이(가) 필요하지만 제공되지 않았습니다.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1624)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:594)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7194)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:2979)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:248)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:223)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:505)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy70.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy71.remove(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy72.remove(Unknown Source)
+	at org.example.home.HomeServies.remove(HomeServies.java:43)
+	at org.example.home.HomeController.deleteTable(HomeController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-23 17:38:06 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 17:38:06 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 17:38:11 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 15012 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 17:38:11 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 17:38:12 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:38:12 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:38:12 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.607 seconds (JVM running for 2.424)
+2023-03-23 17:38:15 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 17:38:15 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 17:38:15 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 17:43:29 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 17:43:29 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-03-23 17:43:37 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 3444 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 17:43:37 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 17:43:38 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:43:38 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:43:38 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.987 seconds (JVM running for 2.61)
+2023-03-23 17:43:48 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 15944 (D:\project\Demo\demo1\build\classes\java\main started by user in D:\project\Demo\demo1)
+2023-03-23 17:43:48 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-03-23 17:43:49 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:43:49 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-03-23 17:43:49 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.641 seconds (JVM running for 2.671)
+2023-03-23 17:43:57 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-03-23 17:43:57 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-03-23 17:43:57 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-03-23 18:06:12 [WARN ] [HikariPool.java]run(787) : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m44s549ms566µs400ns).
+2023-03-23 18:06:38 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-03-23 18:06:38 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.

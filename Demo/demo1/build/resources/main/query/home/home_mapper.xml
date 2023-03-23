@@ -19,8 +19,18 @@
     </select>
 
     <select id="remove" resultType="org.example.home.DTO.SYS_REASON_SUB_CD">
-        EXEC SP_KDW_USER_DELETE2 #{reason_code}
+        EXEC SP_KDW_REASON_SUB_DEL #{keyword}
     </select>
+
+    <select id="get_subTable" resultType="org.example.home.DTO.SYS_REASON_SUB2_CD">
+        SELECT REASON_CODE, REASON_NAME FROM SYS_REASON_SUB2_CD WHERE  REASON_GRP_CODE = #{reason_grp_code}
+    </select>
+
+    <select id="updateAll" resultType="org.example.home.DTO.SYS_REASON_SUB_CD">
+        EXEC SP_KDW_REASON_SAVE #{reason_code}, #{reason_grp_code} , #{reason_grp_name}, #{keyword}, #{list}
+    </select>
+
+
 
 <!--
 -->
@@ -38,9 +48,7 @@
 
 
 
-<!--    <delete id="remove">-->
-<!--        delete from USER_LIST_KDW WHERE USER_NO = #{user_no}-->
-<!--    </delete>-->
+
 
 
 
