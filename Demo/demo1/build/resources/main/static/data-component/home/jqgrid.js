@@ -8,7 +8,7 @@ $(document).ready(function(){
     var resultColModel = [
         {name: 'reason_code',  index:'reason_code',align: 'center', width:'10%'},
         {name: 'reason_grp_code', index:'reason_grp_code',align: 'center', width:'15%',key:true},
-        {name: 'reason_name', index:'reason_name',align: 'center', width:'15%'},
+        {name: 'reason_grp_name', index:'reason_grp_name',align: 'center', width:'15%'},
         {name: 'create_date', index:'create_date',align: 'center', width:'15%'}
     ];
 
@@ -24,13 +24,14 @@ $(document).ready(function(){
         pager: "pager",
         caption: "원인코드 게시판",
         ondblClickRow: function update(rowid) {
+
             modaload();
             var keyword ='U';
             UIcheck = keyword;
             var key = $("#jqGrid").getGridParam('selarrrow');
             var reason_code = $("#jqGrid").jqGrid('getRowData', rowid).reason_code;
             var reason_grp_code = $("#jqGrid").jqGrid('getRowData', rowid).reason_grp_code;
-            var reason_name = $("#jqGrid").jqGrid('getRowData', rowid).reason_name;
+            var reason_grp_name = $("#jqGrid").jqGrid('getRowData', rowid).reason_grp_name;
             var create_date = $("#jqGrid").jqGrid('getRowData', rowid).create_date;
 
             var grid = $("#table_modal");
@@ -56,10 +57,10 @@ $(document).ready(function(){
             var code = $("#searchType").val();*/
             $("#reason_code").prop('readonly', true);
             $("#reason_code").val(reason_code);
-            $("#code").val(reason_code);
+            $("#reason_code").val(reason_code);
             $("#date").val(create_date);
             $("#reason_grp_code").val(reason_grp_code);
-            $("#reason_grp_name").val(reason_name);
+            $("#reason_grp_name").val(reason_grp_name);
             $("#dialog1").dialog("open");
 
             if (key.length == 0) {
@@ -69,7 +70,7 @@ $(document).ready(function(){
                     data: obj_data,
                     success :function(data) {
                         console.log(data);
-
+                        $("#table_modal").jqGrid('clearGridData',true);
                         $("#table_modal").setGridParam({
                                 data:data,
                                 datatype: "local"
@@ -128,6 +129,9 @@ function makeTable() {
                 $("#table_modal").jqGrid("saveCell",iRow,iCol);
             });
         },
+        jsonReader : {
+            id: "key"
+        }
 
     });
 }
@@ -144,7 +148,9 @@ function modaload(){
     // $('input[name=code]').attr('value',selected_reasoncode);
     // $('input[name=reason_code]').attr('value',selected_code);
     $('#reason_code').val($("#search_things option:selected").text())
+    $('#reason_code').val($("#search_things option:selected").val())
     $("#dialog1").dialog("open");
+
 
     makeTable();
 
@@ -179,7 +185,8 @@ function deleteValue1() {
                 type: "POST",
                 data: {keyword: del_list.join(gu5)},
                 success: function (result) {
-                    alert(result);
+                    alert("삭제 되었습니다.");
+
 
                     $("#jqGrid").trigger('reloadGrid')
 
@@ -241,6 +248,9 @@ function getSelectBox() {
 //         }
 //     })
 // }
+
+
+
 
 
 

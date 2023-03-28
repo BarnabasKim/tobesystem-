@@ -34,12 +34,19 @@ public class HomeController {
 //
 //}
     @RequestMapping(value = "delData", method = RequestMethod.POST)
-    public String deleteTable(SYS_REASON_SUB_CD sys_reason_sub_cd) {
-
-        servies.remove(sys_reason_sub_cd);
-
-        System.out.println(sys_reason_sub_cd);
-        return "home/project_reason";
+    public String deleteTable(@RequestParam("keyword") String del_list) {
+        try {
+            String[] delArr = del_list.split(",");
+            for (String code : delArr) {
+                SYS_REASON_SUB_CD sys_reason_sub_cd = new SYS_REASON_SUB_CD();
+                sys_reason_sub_cd.setKeyword(code.trim());
+                servies.remove(sys_reason_sub_cd);
+            }
+            return "home/project_reason";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "error";
+        }
     }
 
 

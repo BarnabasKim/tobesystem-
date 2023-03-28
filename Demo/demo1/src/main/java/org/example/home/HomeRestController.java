@@ -41,7 +41,7 @@ public class HomeRestController {
     }
     @RequestMapping(value = "/modal_IU", method = RequestMethod.POST)
     public void updateAll(SYS_REASON_SUB_CD sys_reason_sub_cd) {
-
+        System.out.println(sys_reason_sub_cd);
         servies.updateAll(sys_reason_sub_cd);
     }
 

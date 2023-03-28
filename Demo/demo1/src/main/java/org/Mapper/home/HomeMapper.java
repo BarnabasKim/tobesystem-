@@ -10,7 +10,7 @@ import java.util.List;
 
 
 @Repository
-public interface HomeMapper {
+public interface HomeMapper{
 
     List<SYS_REASON_SUB_CD> viewAll(SYS_REASON_SUB_CD list);
 
