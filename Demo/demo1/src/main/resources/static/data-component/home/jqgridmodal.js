@@ -19,7 +19,6 @@ function modal_make1() {
         cellEdit : true,
         buttons: {
             "취소": function () {
-                $("#table_modal").jqGrid('clearGridData',true);
                 $("#dialog1").jqGrid('clearGridData',true);
                 $(this).dialog("close"); //dialog 닫기 메소드 실행
 
