@@ -7,6 +7,11 @@
     SELECT * FROM SYS_LOC_CD
 </select>
 
+<select id="insertall" resultType="org.example.home.DTO.SYS_LOC_CD">
+    EXEC SP_KDW_MANAGE_SAVE #{loc_code}, #{loc_name}, #{stock_lqty}, #{move_qty},#{use_yn},#{user_code},#{keyword}, #{list}
+</select>
+
+
 
 
 

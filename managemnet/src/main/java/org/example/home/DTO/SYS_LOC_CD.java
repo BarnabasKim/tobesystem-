@@ -18,5 +18,12 @@ public class SYS_LOC_CD {
 
     private String update_date;
 
+    private String keyword;
+
+    private String list;
+
+    private String result;
+    private String message;
+
 
 }

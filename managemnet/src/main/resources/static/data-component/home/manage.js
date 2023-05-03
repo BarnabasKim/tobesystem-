@@ -1,3 +1,4 @@
+var keyword = 'I';
 $(document).ready(function() {
 
     var resultColNames = ['코드','명칭', '적재 제한수량', '이동제한', '사용유무', '등록자','등록일'];
@@ -22,7 +23,37 @@ $(document).ready(function() {
         rowNum: 99999,
         rownumbers: true,
         pager: "pager",
-        caption: "로케이션 관리 게시판"
+        caption: "로케이션 관리 게시판",
+        ondblClickRow: function update(rowid) {
+            modaload();
+            keyword ='U';
+            var key = $("#jqGrid").getGridParam('selarrrow');
+            var loc_code = $("#jqGrid").jqGrid('getRowData', rowid).loc_code;
+            var loc_name = $("#jqGrid").jqGrid('getRowData', rowid).loc_name;
+            var stock_lqty = $("#jqGrid").jqGrid('getRowData', rowid).stock_lqty;
+            var move_qty = $("#jqGrid").jqGrid('getRowData', rowid).move_qty;
+            var use_yn = $("#jqGrid").jqGrid('getRowData', rowid).use_yn;
+            var create_date = $("#jqGrid").jqGrid('getRowData', rowid).create_date;
+            var gu5 = String.fromCharCode(5);
+            var obj_data = {}
+            var list=[];
+
+
+            obj_data.keyword = keyword;
+            obj_data.list = key.join(gu5);
+            obj_data.loc_code = rowid;
+
+            console.log(obj_data);
+
+            $("#loc_code").prop('readonly', true);
+            $("#loc_code").val(loc_code);
+            $("#loc_name").val(loc_name);
+            $("#date").val(create_date);
+            $("#stock_lqty").val(stock_lqty);
+            $("#move_qty").val(move_qty);
+            $("#use_yn").val(use_yn);
+            $("#dialog1").dialog("open");
+        }
 
 
 
@@ -31,6 +62,7 @@ $(document).ready(function() {
 })
 
 function check() {
+
     $("#jqGrid").setGridParam({
         url: "get_list",
         postData: {searchType:$("#jqGrid").val()},
@@ -41,7 +73,7 @@ function check() {
 }
 
 function modaload(){
-
+    keyword = 'I';
     $("#dialog1").dialog("open");
 
 }
@@ -57,8 +89,8 @@ function modal_make1() {
 
     $("#dialog1").dialog({
         modal: true,
-        width: 500,
-        height: 500,
+        width: 800,
+        height: 800,
         resizeable: true,
         autoOpen: false,
         autosize: false,
@@ -71,11 +103,62 @@ function modal_make1() {
 
             },
             "저장": function () {
-                aa();
+                saveLoc();
 
                 // save();
             }
         }
 
     });
+}
+
+
+function saveLoc() {
+
+    var obj_data = {}
+    var data_list = $(".modal_work_get");
+    var list = [];
+
+    var gu5 = String.fromCharCode(5);
+    var grid = $("#modaldata");
+    // var rowData = grid.jqGrid('getRowData');
+    var check = 'Y';
+
+    data_list.each(function (index, item) {
+        obj_data[item.name] = $(item).val();
+    });
+
+    obj_data.keyword = keyword;
+    obj_data.list = list.join(gu5);
+
+
+    console.log(obj_data);
+
+    if (check == 'Y') {
+        // if (rowData.length == modal_ck_count) {
+            $.ajax({
+                url: "/Loc_Updated",
+                type: "POST",
+                data: obj_data,
+                success: function (data) {
+                    console.log(data);
+                    if (data.result == "NG") {
+                        alert(data.message);
+                    } else {
+
+                        $("#jqGrid").trigger('reloadGrid');
+                        $("#dialog1").dialog("close");
+                        $("#modaldata").trigger('reloadGrid');
+                    }
+
+
+                    // $("#dialog1").addClass( "hidden" )
+                },
+                error: function (request, status, error) {
+                    alert("code = " + request.status + " message = " + request.responseText + " error = " + error)
+                }
+            })
+
+    }
+
 }

@@ -17,7 +17,7 @@
 
     <style>
         .modal_work_get {
-            width: 50%;
+            width: 100%;
             padding: 5px;
             border: 3px solid black;
         }
@@ -26,7 +26,7 @@
 <body>
 <div id="dialog1" class="modal_background" title="모달화면">
     <div class=input-wrap">
-        <fieldset>
+        <fieldset id="modaldata">
             <legend>로케이션 추가창</legend>
              <input type="hidden" name="code">
             <label for="loc_code">코드</label>

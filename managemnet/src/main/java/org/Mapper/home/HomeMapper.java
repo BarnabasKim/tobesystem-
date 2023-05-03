@@ -12,4 +12,8 @@ public interface HomeMapper {
 
     List<SYS_LOC_CD> viewall(SYS_LOC_CD list);
 
+    SYS_LOC_CD insertall(SYS_LOC_CD sys_loc_cd);
+
+
+
 }

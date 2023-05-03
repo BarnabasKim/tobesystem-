@@ -21,4 +21,12 @@ public class HomeService {
     public List<SYS_LOC_CD> viewall(SYS_LOC_CD list){
         return mapper.viewall(list);
     }
-}
+
+    public SYS_LOC_CD insertall(SYS_LOC_CD sys_loc_cd){
+        return mapper.insertall(sys_loc_cd);
+    }
+
+
+    }
+
+

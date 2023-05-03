@@ -21,6 +21,16 @@ public class HomeRestController {
         return service.viewall(list);
     }
 
+    @RequestMapping(value = "/Loc_Updated", method = RequestMethod.POST)
+    public SYS_LOC_CD insertLoc(SYS_LOC_CD sys_loc_cd){
+        System.out.println(sys_loc_cd);
+        return service.insertall(sys_loc_cd);
+    }
+
+    }
 
 
-}
+
+
+
+
