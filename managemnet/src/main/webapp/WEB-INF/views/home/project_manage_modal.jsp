@@ -13,6 +13,7 @@
 
 
     <script src="/data-component/home/manage.js"></script>
+    <script src="/data-component/home/manage2.js"></script>
 
 
     <style>

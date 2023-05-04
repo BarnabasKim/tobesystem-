@@ -11,11 +11,44 @@
     EXEC SP_KDW_MANAGE_SAVE #{loc_code}, #{loc_name}, #{stock_lqty}, #{move_qty},#{use_yn},#{user_code},#{keyword}, #{list}
 </select>
 
+<select id="removeall" resultType="org.example.home.DTO.SYS_LOC_CD">
+    EXEC SP_KDW_LOC_DEL #{keyword}
+</select>
+
+    <select id="removeSuppAll" resultType="org.example.home.DTO.SYS_SUPP_CD">
+        EXEC SP_KDW_SUPP_DEL #{keyword}
+    </select>
 
 
 
 
+    <select id="get_supp_selectbox" resultType="org.example.home.DTO.SYS_SUPP_CD">
+        SELECT SUPP_CODE, SUPP_NAME FROM SYS_SUPP_CD
+    </select>
 
+    <select id="get_supp_selectbox1" resultType="org.example.home.DTO.SYS_LOC_CD">
+        SELECT LOC_CODE, LOC_NAME FROM SYS_LOC_CD
+    </select>
+
+
+    <select id="get_Mselectbox" resultType="org.example.home.DTO.SYS_MODEL_CD">
+        SELECT MODEL_CODE, MODEL_NAME FROM SYS_MODEL_CD
+    </select>
+
+
+    <select id="view_supp" resultType="org.example.home.DTO.SYS_SUPP_CD">
+    EXEC SP_KDW_MNG_GETSUPP #{searchType}
+    </select>
+
+
+    <select id="view_model" resultType="org.example.home.DTO.SYS_MODEL_CD">
+        EXEC SP_KDW_MNG_GETM #{searchType}
+    </select>
+
+    <select id="insert_supp" resultType="org.example.home.DTO.SYS_SUPP_CD">
+        EXEC SP_KDW_MNG_SAVE_SUP #{supp_code}, #{supp_name}, #{ceo},#{buss_type},#{emp_name},#{loc_code},#{user_code},#{buss_number},#{stock_type},
+        #{user_number},#{fax_number},#{keyword}, #{list}
+    </select>
 
 
 

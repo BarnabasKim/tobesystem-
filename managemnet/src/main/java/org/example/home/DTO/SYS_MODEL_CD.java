@@ -11,4 +11,8 @@ public class SYS_MODEL_CD {
     private String user_code;
 
     private String create_date;
+
+    private String update_date;
+
+    private String searchType;
 }

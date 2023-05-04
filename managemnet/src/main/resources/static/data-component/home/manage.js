@@ -120,8 +120,6 @@ function saveLoc() {
     var list = [];
 
     var gu5 = String.fromCharCode(5);
-    var grid = $("#modaldata");
-    // var rowData = grid.jqGrid('getRowData');
     var check = 'Y';
 
     data_list.each(function (index, item) {
