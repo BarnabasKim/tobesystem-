@@ -20,16 +20,16 @@
 <body>
 
 <div id="dialog1">
-    <div id="dialog" class="modal__background">
+    <div class="modal__background">
         <div class="modal__box">
-            <table border="1px solid black">
+            <table border="1px solid black" id="modal_modeldata">
                 <tr>
                     <td><label for="model_code">기종코드</label></td>
-                    <td><input type="text" id="model_code"></td>
+                    <td><input type="text" id="model_code" name = "model_code" class="modal_work_getM"></td>
                 </tr>
                 <tr>
                     <td><label for="model_name">기종명</label></td>
-                    <td><input type="text" id="model_name"></td>
+                    <td><input type="text" id="model_name" name = "model_name" class="modal_work_getM"></td>
                 </tr>
             </table>
         </div>

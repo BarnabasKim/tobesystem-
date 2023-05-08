@@ -6,10 +6,25 @@
 <select id="viewall" resultType="org.example.home.DTO.SYS_LOC_CD">
     SELECT * FROM SYS_LOC_CD
 </select>
+    <select id="view_supp" resultType="org.example.home.DTO.SYS_SUPP_CD">
+        EXEC SP_KDW_MNG_GETSUPP #{searchType}
+    </select>
 
-<select id="insertall" resultType="org.example.home.DTO.SYS_LOC_CD">
-    EXEC SP_KDW_MANAGE_SAVE #{loc_code}, #{loc_name}, #{stock_lqty}, #{move_qty},#{use_yn},#{user_code},#{keyword}, #{list}
-</select>
+
+    <select id="view_model" resultType="org.example.home.DTO.SYS_MODEL_CD">
+        EXEC SP_KDW_MNG_GETM #{searchType}
+    </select>
+
+    <select id="view_part" resultType="org.example.home.DTO.SYS_PART_CD">
+        EXEC SP_KDW_MNG_GETP #{searchType}
+    </select>
+
+    <select id="viewlocAll" resultType="org.example.home.DTO.SYS_SUPP_CD">
+        SELECT * FROM SYS_SUPP_CD
+    </select>
+
+
+
 
 <select id="removeall" resultType="org.example.home.DTO.SYS_LOC_CD">
     EXEC SP_KDW_LOC_DEL #{keyword}
@@ -19,6 +34,13 @@
         EXEC SP_KDW_SUPP_DEL #{keyword}
     </select>
 
+    <select id="removeModelAll" resultType="org.example.home.DTO.SYS_MODEL_CD">
+        EXEC SP_KDW_MNG_DEL_MODEL #{keyword}
+    </select>
+
+    <select id="removePartAll" resultType="org.example.home.DTO.SYS_PART_CD">
+        EXEC SP_KDW_MNG_DEL_PART #{keyword}
+    </select>
 
 
 
@@ -31,23 +53,37 @@
     </select>
 
 
+
     <select id="get_Mselectbox" resultType="org.example.home.DTO.SYS_MODEL_CD">
         SELECT MODEL_CODE, MODEL_NAME FROM SYS_MODEL_CD
     </select>
 
+    <select id="get_Pselectbox" resultType="org.example.home.DTO.SYS_PART_CD">
+        SELECT PART_CODE, PART_NAME FROM SYS_PART_CD
+    </select>
 
-    <select id="view_supp" resultType="org.example.home.DTO.SYS_SUPP_CD">
-    EXEC SP_KDW_MNG_GETSUPP #{searchType}
+    <select id="get_selectboxModel" resultType="org.example.home.DTO.SYS_MODEL_CD">
+        SELECT MODEL_CODE, MODEL_NAME FROM SYS_MODEL_CD
     </select>
 
 
-    <select id="view_model" resultType="org.example.home.DTO.SYS_MODEL_CD">
-        EXEC SP_KDW_MNG_GETM #{searchType}
+
+
+    <select id="insertall" resultType="org.example.home.DTO.SYS_LOC_CD">
+        EXEC SP_KDW_MANAGE_SAVE #{loc_code}, #{loc_name}, #{stock_lqty}, #{move_qty},#{use_yn},#{user_code},#{keyword}, #{list}
     </select>
 
     <select id="insert_supp" resultType="org.example.home.DTO.SYS_SUPP_CD">
         EXEC SP_KDW_MNG_SAVE_SUP #{supp_code}, #{supp_name}, #{ceo},#{buss_type},#{emp_name},#{loc_code},#{user_code},#{buss_number},#{stock_type},
         #{user_number},#{fax_number},#{keyword}, #{list}
+    </select>
+
+    <select id="insert_model" resultType="org.example.home.DTO.SYS_MODEL_CD">
+        EXEC SP_KDW_MNG_SAVE_MODEL #{model_code}, #{model_name}, #{user_code}, #{keyword}, #{list}
+    </select>
+
+    <select id="insert_part" resultType="org.example.home.DTO.SYS_PART_CD">
+        EXEC SP_KDW_MNG_SAVE_PART #{part_code}, #{part_name}, #{model_code}, #{supp_code}, #{use_yn},#{user_code}, #{keyword}, #{list}
     </select>
 
 

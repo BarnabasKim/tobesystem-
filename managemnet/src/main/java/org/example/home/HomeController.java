@@ -1,6 +1,8 @@
 package org.example.home;
 
 import org.example.home.DTO.SYS_LOC_CD;
+import org.example.home.DTO.SYS_MODEL_CD;
+import org.example.home.DTO.SYS_PART_CD;
 import org.example.home.DTO.SYS_SUPP_CD;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,6 +33,9 @@ public class HomeController {
         return "model/project_mng_model";
     }
 
+    @RequestMapping(value = "/part")
+    public String home_part() {return "part/project_mng_partMain"; }
+
 
     @RequestMapping(value = "delData", method = RequestMethod.POST)
     public String deleteData(@RequestParam("keyword") String del_list) {
@@ -51,7 +56,6 @@ public class HomeController {
     }
 
 
-
     @RequestMapping(value = "delSuppData", method = RequestMethod.POST)
     public String deleteSuppData(@RequestParam("keyword") String del_list) {
         try {
@@ -68,5 +72,38 @@ public class HomeController {
         }
 
 
+    }
+
+
+    @RequestMapping(value = "delModelData", method = RequestMethod.POST)
+    public String deleteModelData(@RequestParam("keyword") String del_list) {
+        try {
+            String[] delArr = del_list.split(",");
+            for (String code : delArr) {
+                SYS_MODEL_CD sys_model_cd = new SYS_MODEL_CD();
+                sys_model_cd.setKeyword(code.trim());
+                service.removeModelAll(sys_model_cd);
+            }
+            return "model/project_mng_model";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "error";
+        }
+    }
+
+    @RequestMapping(value = "delPartData", method = RequestMethod.POST)
+    public String deletePartData(@RequestParam("keyword") String del_list) {
+        try {
+            String[] delArr = del_list.split(",");
+            for (String code : delArr) {
+                SYS_PART_CD sys_part_cd = new SYS_PART_CD();
+                sys_part_cd.setKeyword(code.trim());
+                service.removePartAll(sys_part_cd);
+            }
+            return "part/project_mng_partMain";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "error";
+        }
     }
 }

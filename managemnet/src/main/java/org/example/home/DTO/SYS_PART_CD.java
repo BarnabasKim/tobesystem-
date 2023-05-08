@@ -20,4 +20,19 @@ public class SYS_PART_CD {
     private String update_date;
 
     private String user_code;
+
+    private String searchType;
+
+    private String model_name;
+
+    private String supp_name;
+
+    private String result;
+    private String message;
+
+
+    private String keyword;
+
+    private String list;
+
 }

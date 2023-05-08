@@ -1,14 +1,14 @@
-var keyword = 'I';
-
-function model_modaload(){
+function part_modaload(){
     keyword = 'I';
     $("#dialog1").dialog("open");
 
 }
+// 두번째 모달 코드
 $(document).ready(function(){
-
+    getMSelectBox();
     modal_start1();
 });
+
 function modal_start1() {
     modal_make11();
 }
@@ -33,18 +33,36 @@ function modal_make11() {
             "저장": function () {
 
 
-                 saveModel();
+                savePart();
             }
         }
 
     });
 }
 
+function getMSelectBox() {
+    $(document).ready(function(){
+        $.ajax({
+            url: "/getOptionModel",
+            type: "GET",
+            success: function (data) {
 
-function saveModel() {
+                var selectBox = $('#model_code');
+                $.each(data, function(index, option) {
+                    var optionElement = $('<option>')
+                        .attr('value', option.model_code)
+                        .text(option.model_name);
+                    selectBox.append(optionElement);
+                });
+            }
+        })
 
+    });
+}
+
+function savePart() {
     var obj_data = {}
-    var data_list = $(".modal_work_getM");
+    var data_list = $(".modal_work_getP");
     var list = [];
 
     var gu5 = String.fromCharCode(5);
@@ -63,7 +81,7 @@ function saveModel() {
     if (check == 'Y') {
         // if (rowData.length == modal_ck_count) {
         $.ajax({
-            url: "/Model_Updated",
+            url: "/Part_Updated",
             type: "POST",
             data: obj_data,
             success: function (data) {
@@ -74,7 +92,7 @@ function saveModel() {
 
                     $("#jqGrid").trigger('reloadGrid');
                     $("#dialog1").dialog("close");
-                    $("#modal_modeldata").trigger('reloadGrid');
+                    $("#modal_part_data").trigger('reloadGrid');
                 }
 
 
@@ -87,3 +105,5 @@ function saveModel() {
 
     }
 }
+
+

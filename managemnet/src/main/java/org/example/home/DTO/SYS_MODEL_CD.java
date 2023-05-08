@@ -15,4 +15,8 @@ public class SYS_MODEL_CD {
     private String update_date;
 
     private String searchType;
+
+    private String keyword;
+
+    private String list;
 }
