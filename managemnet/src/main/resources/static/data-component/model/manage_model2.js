@@ -3,6 +3,7 @@ var keyword = 'I';
 function model_modaload(){
     keyword = 'I';
     $("#dialog1").dialog("open");
+    $(".modal_work_getM").val('');
 
 }
 $(document).ready(function(){
@@ -36,7 +37,6 @@ function modal_make11() {
                  saveModel();
             }
         }
-
     });
 }
 
@@ -61,29 +61,57 @@ function saveModel() {
     console.log(obj_data);
 
     if (check == 'Y') {
-        // if (rowData.length == modal_ck_count) {
-        $.ajax({
-            url: "/Model_Updated",
-            type: "POST",
-            data: obj_data,
-            success: function (data) {
-                console.log(data);
-                if (data.result == "NG") {
-                    alert(data.message);
-                } else {
+        if (reason_ck_model(obj_data)) {
+            $.ajax({
+                url: "/Model_Updated",
+                type: "POST",
+                data: obj_data,
+                success: function (data) {
+                    console.log(data);
+                    if (data.result == "NG") {
+                        alert(data.message);
+                    } else {
 
-                    $("#jqGrid").trigger('reloadGrid');
-                    $("#dialog1").dialog("close");
-                    $("#modal_modeldata").trigger('reloadGrid');
+                        $("#jqGrid").trigger('reloadGrid');
+                        $("#dialog1").dialog("close");
+                    }
+
+
+                    // $("#dialog1").addClass( "hidden" )
+                },
+                error: function (request, status, error) {
+                    alert("code = " + request.status + " message = " + request.responseText + " error = " + error)
                 }
-
-
-                // $("#dialog1").addClass( "hidden" )
-            },
-            error: function (request, status, error) {
-                alert("code = " + request.status + " message = " + request.responseText + " error = " + error)
-            }
-        })
+            })
+        }
 
     }
+}
+
+function reason_ck_model(obj_data) {
+    var return_ck = true;
+    var pattern = /\s/g;
+
+    var fields = [
+        {name: '기종코드', value: obj_data.model_code},
+        {name: '기종명', value: obj_data.model_name},
+    ];
+
+
+
+    for (var i = 0; i < fields.length; i++) {
+        var field = fields[i];
+        if (!field.value) {
+            alert(field.name + '을(를) 올바르게 입력해주세요.');
+            return_ck = false;
+            break;
+        } else if (field.name == '기종코드' && pattern.test(field.value)) {
+            alert('기종코드에 스페이스바를 치지 마세요.');
+            return_ck = false;
+            break;
+        }
+    }
+
+
+    return return_ck;
 }

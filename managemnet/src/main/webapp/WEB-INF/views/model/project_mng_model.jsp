@@ -26,6 +26,11 @@
         </select>
     </form>
 </div>
+<div id="div_background">
+    <input type="text" name="search_model" id=search_model placeholder ="검색어 입력">
+    <button id="search_button" type="submit" onclick="search_Model()">검색</button>
+</div>
+
 <div>
     <button id="check-button" type="button" onclick="check_model()">조회</button>
     <button id="post-button" type="button" onclick="model_modaload()">추가</button>

@@ -75,6 +75,7 @@ function check() {
 function modaload(){
     keyword = 'I';
     $("#dialog1").dialog("open");
+    $(".modal_work_get").val('');
 
 }
 
@@ -120,7 +121,7 @@ function saveLoc() {
     var list = [];
 
     var gu5 = String.fromCharCode(5);
-    var check = 'Y';
+
 
     data_list.each(function (index, item) {
         obj_data[item.name] = $(item).val();
@@ -132,8 +133,8 @@ function saveLoc() {
 
     console.log(obj_data);
 
-    if (check == 'Y') {
-        // if (rowData.length == modal_ck_count) {
+
+        if (reason_ck(obj_data)){
             $.ajax({
                 url: "/Loc_Updated",
                 type: "POST",
@@ -150,13 +151,43 @@ function saveLoc() {
                     }
 
 
-                    // $("#dialog1").addClass( "hidden" )
+
                 },
                 error: function (request, status, error) {
                     alert("code = " + request.status + " message = " + request.responseText + " error = " + error)
                 }
             })
+        }
 
+     else {
+        alert("그리드에 빈값이 있습니다.");
     }
 
+}
+
+
+function reason_ck(obj_data) {
+    var return_ck = true
+    var pattern = /\s/g;
+
+
+
+    if (obj_data.loc_code == '' || obj_data.loc_code == null) {
+        alert("창고코드를 입력해주세요")
+        return_ck = false;
+    } else if (obj_data.loc_code.match(pattern)) {
+        alert("창고코드에 스페이스바를 치지마세요")
+        return_ck = false;
+    } else if (obj_data.loc_name == '' || obj_data.loc_name == null) {
+        alert("창고이름을 입력해주세요")
+        return_ck = false;
+    } else if (obj_data.stock_lqty == '' || obj_data.stock_lqty == null) {
+        alert("적재 제한수량을 입력해주세요")
+        return_ck = false;
+    } else if (obj_data.move_qty == '' || obj_data.move_qty == null){
+        alert("이동제한을 입력해주세요")
+        return_ck = false;
+    }
+
+    return return_ck;
 }

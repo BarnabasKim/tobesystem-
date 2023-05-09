@@ -31,6 +31,27 @@ public class HomeRestController {
         return service.viewlocall(list);
     }
 
+    @RequestMapping(value = "/search_Model_list", method = RequestMethod.POST)
+    public List<SYS_MODEL_CD> search_Model(SYS_MODEL_CD search_list) {
+        System.out.println(search_list);
+        return service.search_Model(search_list);
+    }
+
+    @RequestMapping(value = "/search_Supp_list", method = RequestMethod.POST)
+    public List<SYS_SUPP_CD> search_Model(SYS_SUPP_CD search_Supp) {
+        System.out.println(search_Supp);
+        return service.search_Supp(search_Supp);
+    }
+
+    @RequestMapping(value = "/search_Part_list", method = RequestMethod.POST)
+    public List<SYS_PART_CD> search_Model(SYS_PART_CD search_Part) {
+        System.out.println(search_Part);
+        return service.search_Part(search_Part);
+    }
+
+
+
+
     @RequestMapping(value = "/Loc_Updated", method = RequestMethod.POST)
     public SYS_LOC_CD insertLoc(SYS_LOC_CD sys_loc_cd){
         System.out.println(sys_loc_cd);
@@ -95,6 +116,8 @@ public class HomeRestController {
 
     @RequestMapping(value = "/get_part_list", method = RequestMethod.POST)
     public List<SYS_PART_CD> view_part(SYS_PART_CD part_list) {return service.view_part(part_list); }
+
+
 
 
 

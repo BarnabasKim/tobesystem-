@@ -9,8 +9,8 @@ $(document).ready(function() {
         {name: 'part_name', index: 'part_name', align: 'center', width: '10%'},
         {name: 'model_name', index: 'model_name', align: 'center', width: '10%'},
         {name: 'model_code', index: 'model_code', align: 'center', hidden : true},
-        {name: 'supp_name', index: 'supp_name', align: 'center', width: '10%'},
-        {name: 'supp_code', index: 'supp_code', align: 'center', hidden : true },
+        {name: 'supp_name', index: 'supp_name', align: 'center',width: '10%' },
+        {name: 'supp_code', index: 'supp_code', align: 'center', hidden : true},
         {name: 'use_yn', index: 'use_yn', align: 'center', width: '10%'},
         {name: 'user_code', index: 'user_code', align: 'center', width: '10%'},
         {name: 'create_date', index: 'create_date', align: 'center', width: '10%'},
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
             var gu5 = String.fromCharCode(5);
             var obj_data = {}
-            var list=[];
+
 
 
             obj_data.keyword = keyword;
@@ -93,7 +93,16 @@ function getPSelectBox() {
 function check_part() {
     $("#jqGrid").setGridParam({
         url : "get_part_list",
-        postData : {searchType:$("#search_part").val()},
+        postData : {searchType:$("#search_Parts").val()},
+        datatype: "json",
+        mtype: "post"
+    }).trigger('reloadGrid');
+}
+
+function search_part(){
+    $("#jqGrid").setGridParam({
+        url : "search_Part_list",
+        postData : {searchType:$("#search_Parts").val()},
         datatype: "json",
         mtype: "post"
     }).trigger('reloadGrid');
@@ -105,18 +114,19 @@ function Delete_Part_Data() {
     var gu5 = String.fromCharCode(5);
     var part_code = $("#jqGrid").getGridParam("selarrrow");
     var del_list = [];
-    for (var i = 0; i < part_code.length; i++) {
-        var rowData = $('#jqGrid').getRowData(part_code[i])
-        del_list.push(rowData.part_code);
-        console.log(del_list)
+
 
 
         if (part_code.length == 0) {
             alert("삭제할 데이터를 선택해주세요");
             return false;
-        } else {
-            if (part_code.length > 0) {
+        }
+
                 if (confirm("선택한 데이터를 삭제하시겠습니까?")) {
+                    for (var i = 0; i < part_code.length; i++) {
+                        var rowData = $('#jqGrid').getRowData(part_code[i])
+                        del_list.push(rowData.part_code);
+                        console.log(del_list)
                 }
                 $.ajax({
 
@@ -136,8 +146,7 @@ function Delete_Part_Data() {
                     }
                 });
             }
-        }
-    }
+
 }
 
 

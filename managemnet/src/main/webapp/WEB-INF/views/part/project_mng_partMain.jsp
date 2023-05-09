@@ -34,6 +34,11 @@
   <button id="delete-button" type="button" onclick="Delete_Part_Data(); ">삭제</button>
 </div>
 
+<div id="div_background">
+  <input type="text" name="search_Parts" id=search_Parts placeholder ="검색어 입력">
+  <button id="search_button" type="submit" onclick="search_part()">검색</button>
+</div>
+
 
 <table id="jqGrid">
   <div id="pager"></div>

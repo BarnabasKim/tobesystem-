@@ -16,6 +16,7 @@ public class SYS_SUPP_CD {
     private String emp_name;
 
     private String loc_code;
+    private String loc_name;
 
     private String user_code;
 

@@ -38,6 +38,7 @@
                 <input type="text" id="stock_lqty" name="stock_lqty" class="modal_work_get" value="">
             <label for="move_qty">이동제한</label>
                 <input type="text" id="move_qty" name="move_qty" class="modal_work_get" value="">
+            <label for="use_yn">사용유무</label>
              <select name="use_yn" id="use_yn" class="modal_work_get" >
                 <option value="Y">Y</option>
                 <option value="N">N</option>

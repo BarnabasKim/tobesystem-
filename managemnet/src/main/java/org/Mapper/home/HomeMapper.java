@@ -17,6 +17,14 @@ public interface HomeMapper {
 
     List<SYS_SUPP_CD> viewlocAll(SYS_SUPP_CD list);
 
+    List<SYS_MODEL_CD> search_Model(SYS_MODEL_CD search_list);
+
+    List<SYS_SUPP_CD> search_Supp(SYS_SUPP_CD search_supp);
+    List<SYS_PART_CD> search_Part(SYS_PART_CD search_part);
+
+
+
+
     SYS_LOC_CD insertall(SYS_LOC_CD sys_loc_cd);
 
     void removeall(SYS_LOC_CD sys_loc_cd);

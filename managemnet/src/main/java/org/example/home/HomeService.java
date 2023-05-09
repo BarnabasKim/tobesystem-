@@ -40,6 +40,12 @@ public class HomeService {
     public List<SYS_PART_CD> view_part(SYS_PART_CD part_list) { return mapper.view_part(part_list); }
 
 
+    public List<SYS_MODEL_CD> search_Model(SYS_MODEL_CD search_list){ return mapper.search_Model(search_list); }
+    public List<SYS_SUPP_CD> search_Supp(SYS_SUPP_CD search_Supp){ return mapper.search_Supp(search_Supp); }
+
+    public List<SYS_PART_CD> search_Part(SYS_PART_CD search_Part){ return mapper.search_Part(search_Part); }
+
+
     // 추가 수정
     public SYS_SUPP_CD insert_supp(SYS_SUPP_CD sys_supp_cd) {
         return mapper.insert_supp(sys_supp_cd);

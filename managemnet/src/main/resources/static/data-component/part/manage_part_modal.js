@@ -1,6 +1,8 @@
 function part_modaload(){
     keyword = 'I';
     $("#dialog1").dialog("open");
+    $(".modal_work_getP").val("");
+
 
 }
 // 두번째 모달 코드
@@ -79,31 +81,62 @@ function savePart() {
     console.log(obj_data);
 
     if (check == 'Y') {
-        // if (rowData.length == modal_ck_count) {
-        $.ajax({
-            url: "/Part_Updated",
-            type: "POST",
-            data: obj_data,
-            success: function (data) {
-                console.log(data);
-                if (data.result == "NG") {
-                    alert(data.message);
-                } else {
+        if (reason_ck_part(obj_data)) {
+            $.ajax({
+                url: "/Part_Updated",
+                type: "POST",
+                data: obj_data,
+                success: function (data) {
+                    console.log(data);
+                    if (data.result == "NG") {
+                        alert(data.message);
+                    } else {
 
-                    $("#jqGrid").trigger('reloadGrid');
-                    $("#dialog1").dialog("close");
-                    $("#modal_part_data").trigger('reloadGrid');
+                        $("#jqGrid").trigger('reloadGrid');
+                        $("#dialog1").dialog("close");
+                        $("#dialog1").trigger('reloadGrid');
+                    }
+
+
+                    // $("#dialog1").addClass( "hidden" )
+                },
+                error: function (request, status, error) {
+                    alert("code = " + request.status + " message = " + request.responseText + " error = " + error)
                 }
-
-
-                // $("#dialog1").addClass( "hidden" )
-            },
-            error: function (request, status, error) {
-                alert("code = " + request.status + " message = " + request.responseText + " error = " + error)
-            }
-        })
+            })
+        }
 
     }
 }
 
 
+function reason_ck_part(obj_data) {
+    var return_ck = true;
+    var pattern = /\s/g;
+
+    var fields = [
+        {name: '품번', value: obj_data.part_code},
+        {name: '품명', value: obj_data.part_name},
+        {name: '기종', value: obj_data.model_code},
+        {name: '업체', value: obj_data.supp_name},
+        {name: '사용유무', value: obj_data.use_yn},
+    ];
+
+
+
+    for (var i = 0; i < fields.length; i++) {
+        var field = fields[i];
+        if (!field.value) {
+            alert(field.name + '을(를) 올바르게 입력해주세요.');
+            return_ck = false;
+            break;
+        } else if (field.name == '품번' && pattern.test(field.value)) {
+            alert('품번에 스페이스바를 치지 마세요.');
+            return_ck = false;
+            break;
+        }
+    }
+
+
+    return return_ck;
+}

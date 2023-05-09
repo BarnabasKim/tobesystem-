@@ -18,11 +18,33 @@
 
     <script src="data-component/home/manage.js"></script>
 <%--    <script src="data-component/home/manage2.js"></script>--%>
+
+
+    <style>
+        button{
+            width: 100px;
+            height: 50px;
+            border: 0px;
+            background: #1b5ac2;
+            outline: none;
+            /*float: right;*/
+            color: #FFFFFF;
+
+        }
+
+        #jqGrid {
+            margin: 20px auto;
+        }
+
+    </style>
 </head>
 <body>
-<button id="check-button" type="button" onclick="check()">조회</button>
-<button id="post-button" type="button" onclick="modaload()">추가</button>
-<button id="delete-button" type="button" onclick="del_Data()">삭제</button>
+<div id="button_loc">
+    <button id="check-button" type="button" onclick="check()">조회</button>
+    <button id="post-button" type="button" onclick="modaload()">추가</button>
+    <button id="delete-button" type="button" onclick="del_Data()">삭제</button>
+</div>
+
 
 <table id="jqGrid">
     <div id="pager"></div>

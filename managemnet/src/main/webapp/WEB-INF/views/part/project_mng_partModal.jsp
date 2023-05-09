@@ -38,7 +38,7 @@
                 </tr>
                 <tr>
 
-                    <td><label for="model_code">기종명</label></td>
+                    <td><label for="model_code">기종</label></td>
                     <td>
                         <select id="model_code" name="model_code" class="modal_work_getP"></select>
                     </td>
@@ -57,6 +57,10 @@
                         </select>
                     </td>
 
+                </tr>
+                <tr>
+                    <td><label hidden for="supp_code">업체코드</label></td>
+                    <td><input type="hidden" id="supp_code" name = "supp_code" class="modal_work_getP"></td>
                 </tr>
             </table>
         </div>

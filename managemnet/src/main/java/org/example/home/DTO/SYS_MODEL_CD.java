@@ -19,4 +19,6 @@ public class SYS_MODEL_CD {
     private String keyword;
 
     private String list;
+    private String result;
+    private String message;
 }

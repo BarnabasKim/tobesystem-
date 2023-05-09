@@ -23,6 +23,18 @@
         SELECT * FROM SYS_SUPP_CD
     </select>
 
+    <select id="search_Model" resultType="org.example.home.DTO.SYS_MODEL_CD">
+        EXEC SP_KDW_MODEL_SEARCH #{searchType}
+    </select>
+
+    <select id="search_Supp" resultType="org.example.home.DTO.SYS_SUPP_CD">
+        EXEC SP_KDW_MNG_SUPP_SEARCH #{searchType}
+    </select>
+
+    <select id="search_Part" resultType="org.example.home.DTO.SYS_PART_CD">
+        EXEC SP_KDW_MNG_PART_SEARCH #{searchType}
+    </select>
+
 
 
 
@@ -49,7 +61,7 @@
     </select>
 
     <select id="get_supp_selectbox1" resultType="org.example.home.DTO.SYS_LOC_CD">
-        SELECT LOC_CODE, LOC_NAME FROM SYS_LOC_CD
+        SELECT LOC_CODE, LOC_NAME FROM SYS_LOC_CD WHERE USE_YN = 'Y'
     </select>
 
 
@@ -70,7 +82,7 @@
 
 
     <select id="insertall" resultType="org.example.home.DTO.SYS_LOC_CD">
-        EXEC SP_KDW_MANAGE_SAVE #{loc_code}, #{loc_name}, #{stock_lqty}, #{move_qty},#{use_yn},#{user_code},#{keyword}, #{list}
+        EXEC SP_KDW_MANAGE_SAVE #{loc_code}, #{loc_name}, #{stock_lqty}, #{move_qty}, #{use_yn},#{user_code},#{keyword}, #{list}
     </select>
 
     <select id="insert_supp" resultType="org.example.home.DTO.SYS_SUPP_CD">
@@ -83,7 +95,7 @@
     </select>
 
     <select id="insert_part" resultType="org.example.home.DTO.SYS_PART_CD">
-        EXEC SP_KDW_MNG_SAVE_PART #{part_code}, #{part_name}, #{model_code}, #{supp_code}, #{use_yn},#{user_code}, #{keyword}, #{list}
+        EXEC SP_KDW_MNG_SAVE_PART #{part_code}, #{part_name}, #{model_code}, #{supp_code}, #{use_yn}, #{user_code}, #{keyword}, #{list}
     </select>
 
 

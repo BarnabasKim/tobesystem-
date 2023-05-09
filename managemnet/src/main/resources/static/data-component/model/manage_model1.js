@@ -90,23 +90,32 @@ function check_model() {
     }).trigger('reloadGrid');
 }
 
+function search_Model(){
+    $("#jqGrid").setGridParam({
+        url : "/search_Model_list",
+        postData : {searchType:$("#search_model").val()},
+        datatype: "json",
+        mtype: "post"
+    }).trigger('reloadGrid');
+}
+
 
 function Delete_Model_Data() {
     var gu5 = String.fromCharCode(5);
     var model_code = $("#jqGrid").getGridParam("selarrrow");
     var del_list = [];
-    for (var i = 0; i < model_code.length; i++) {
-        var rowData = $('#jqGrid').getRowData(model_code[i])
-        del_list.push(rowData.model_code);
-        console.log(del_list)
 
 
         if (model_code.length == 0) {
             alert("삭제할 데이터를 선택해주세요");
             return false;
         } else {
-            if (model_code.length > 0) {
-                if (confirm("선택한 데이터를 삭제하시겠습니까?")) {
+
+            if (confirm("선택한 데이터를 삭제하시겠습니까?")) {
+                for (var i = 0; i < model_code.length; i++) {
+                    var rowData = $('#jqGrid').getRowData(model_code[i])
+                    del_list.push(rowData.model_code);
+                    console.log(del_list)
                 }
                 $.ajax({
 
@@ -126,6 +135,6 @@ function Delete_Model_Data() {
                     }
                 });
             }
+
         }
-    }
 }
