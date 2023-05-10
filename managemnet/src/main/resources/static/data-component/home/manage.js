@@ -76,6 +76,7 @@ function modaload(){
     keyword = 'I';
     $("#dialog1").dialog("open");
     $(".modal_work_get").val('');
+    $('#loc_code').prop('readonly', false);
 
 }
 
@@ -91,7 +92,7 @@ function modal_make1() {
     $("#dialog1").dialog({
         modal: true,
         width: 800,
-        height: 800,
+        height: 500,
         resizeable: true,
         autoOpen: false,
         autosize: false,

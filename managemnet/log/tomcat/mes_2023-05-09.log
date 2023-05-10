@@ -445,3 +445,13 @@ com.microsoft.sqlserver.jdbc.SQLServerException: PRIMARY KEY 제약 조건 'PK__
 2023-05-09 16:33:00 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
 2023-05-09 16:38:09 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
 2023-05-09 16:38:09 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-05-09 16:38:16 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 29364 (D:\project\managemnet\build\classes\java\main started by user in D:\project\managemnet)
+2023-05-09 16:38:16 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-05-09 16:38:17 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-05-09 16:38:17 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-05-09 16:38:17 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.976 seconds (JVM running for 2.986)
+2023-05-09 16:38:21 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-09 16:38:21 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-05-09 16:38:21 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-05-09 18:00:14 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-05-09 18:00:14 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.

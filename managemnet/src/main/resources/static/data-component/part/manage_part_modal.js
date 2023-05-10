@@ -1,6 +1,8 @@
 function part_modaload(){
     keyword = 'I';
     $("#dialog1").dialog("open");
+    $('#part_code').prop('readonly', false);
+
     $(".modal_work_getP").val("");
 
 

@@ -27,7 +27,7 @@
     </form>
 </div>
 <div id="div_background">
-    <input type="text" name="search_model" id=search_model placeholder ="검색어 입력">
+    <input type="text" name="search_model" id=search_model placeholder ="검색어 입력" onkeypress="search_Model(event)">
     <button id="search_button" type="submit" onclick="search_Model()">검색</button>
 </div>
 

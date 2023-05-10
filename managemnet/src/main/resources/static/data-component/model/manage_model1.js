@@ -90,13 +90,16 @@ function check_model() {
     }).trigger('reloadGrid');
 }
 
-function search_Model(){
-    $("#jqGrid").setGridParam({
-        url : "/search_Model_list",
-        postData : {searchType:$("#search_model").val()},
-        datatype: "json",
-        mtype: "post"
-    }).trigger('reloadGrid');
+function search_Model(event){
+
+    if(event.keyCode == 13 || event.which == 13) {
+        $("#jqGrid").setGridParam({
+            url: "/search_Model_list",
+            postData: {searchType: $("#search_model").val()},
+            datatype: "json",
+            mtype: "post"
+        }).trigger('reloadGrid');
+    }
 }
 
 

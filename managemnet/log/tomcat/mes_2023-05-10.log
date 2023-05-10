@@ -1,0 +1,20 @@
+2023-05-10 09:01:32 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 23728 (D:\project\managemnet\build\classes\java\main started by user in D:\project\managemnet)
+2023-05-10 09:01:32 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-05-10 09:01:35 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-05-10 09:01:35 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-05-10 09:01:35 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 4.006 seconds (JVM running for 10.006)
+2023-05-10 09:04:49 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-10 09:04:49 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-05-10 09:04:49 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-05-10 10:33:21 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-05-10 10:33:21 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.
+2023-05-10 10:33:30 [INFO ] [StartupInfoLogger.java]logStarting(55) : Starting mainApplication on DESKTOP-RILCUD6 with PID 8612 (D:\project\managemnet\build\classes\java\main started by user in D:\project\managemnet)
+2023-05-10 10:33:30 [INFO ] [SpringApplication.java]logStartupProfileInfo(651) : No active profile set, falling back to default profiles: default
+2023-05-10 10:33:31 [WARN ] [TransformerFactoryUtils.java]defaultSettings(62) : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-05-10 10:33:31 [WARN ] [TransformerFactoryUtils.java]defaultSettings(70) : http://javax.xml.XMLConstants/property/accessExternalStylesheet property not supported by org.apache.xalan.processor.TransformerFactoryImpl
+2023-05-10 10:33:31 [INFO ] [StartupInfoLogger.java]logStarted(61) : Started mainApplication in 1.957 seconds (JVM running for 5.929)
+2023-05-10 10:34:12 [WARN ] [HikariConfig.java]validateNumerics(1009) : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-10 10:34:12 [INFO ] [HikariDataSource.java]getConnection(110) : HikariPool-1 - Starting...
+2023-05-10 10:34:12 [INFO ] [HikariDataSource.java]getConnection(123) : HikariPool-1 - Start completed.
+2023-05-10 11:36:12 [INFO ] [HikariDataSource.java]close(350) : HikariPool-1 - Shutdown initiated...
+2023-05-10 11:36:12 [INFO ] [HikariDataSource.java]close(352) : HikariPool-1 - Shutdown completed.

@@ -9,15 +9,15 @@ $(document).ready(function () {
 
 $(function () {
     $("#list2").jqGrid({
-        colNames: ["업체코드", "업체명", "대표", "업태", "담당자", "로케이션", "로케이션 코드", "등록자", "등록일", "사업자번호", "종목", "전화번호", "팩스번호"],
+        colNames: ["업체코드", "업체명", "대표", "업태", "담당자", "로케이션 코드", "로케이션", "등록자", "등록일", "사업자번호", "종목", "전화번호", "팩스번호"],
         colModel: [
             {name: "supp_code", index: "supp_code", key: true},
             {name: "supp_name", index: "supp_name"},
             {name: "ceo", index: "ceo"},
             {name: "buss_type", index: "buss_type"},
             {name: "emp_name", index: "emp_name"},
-            {name: "loc_name", index: "loc_name"},
             {name: "loc_code", index: "loc_code", hidden: true},
+            {name: "loc_name", index: "loc_name"},
             {name: "user_code", index: "user_code"},
             {name: "update_date", index: "update_date"},
             {name: "buss_number", index: "buss_number", hidden: true},

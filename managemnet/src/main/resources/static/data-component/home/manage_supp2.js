@@ -2,6 +2,7 @@ var keyword = 'I';
 function supp_modaload(){
     keyword = 'I';
     $("#dialog1").dialog("open");
+    $('#supp_code').prop('readonly', false);
     $(".modal_work_get").val('');
 }
 $(document).ready(function(){
@@ -17,8 +18,8 @@ function modal_make11() {
 
     $("#dialog1").dialog({
         modal: true,
-        width: 1000,
-        height: 1000,
+        width: 770,
+        height: 470,
         resizeable: true,
         autoOpen: false,
         autosize: false,

@@ -57,13 +57,13 @@
 
 </head>
 <body>
-<%--<div style = "margin-top : 20px; margin-left : 15px; font-size : 12px;">
+<div style = "margin-top : 20px; margin-left : 15px; font-size : 12px;">
     <form method="post" name="search" autocomplete="off">
         <select name="search_things" id="search_things" class=form-control" style = "width : 10%; float : left;">
 
         </select>
     </form>
-</div>--%>
+</div>
 
 <div id="button_location">
     <button id="check-button" type="button" onclick="check_supp()">조회</button>
@@ -72,7 +72,7 @@
 </div>
 
 <div id="div_background">
-    <input type="text" name="search_supp" id=search_supp placeholder ="검색어 입력">
+    <input type="text" name="search_supp" id=search_supp placeholder ="검색어 입력" onkeypress="search_supp(event)">
     <button id="search_button" type="submit" onclick="search_supp()">검색</button>
 </div>
 

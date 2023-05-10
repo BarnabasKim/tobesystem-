@@ -3,6 +3,7 @@ var keyword = 'I';
 function model_modaload(){
     keyword = 'I';
     $("#dialog1").dialog("open");
+    $('#model_code').prop('readonly', false);
     $(".modal_work_getM").val('');
 
 }

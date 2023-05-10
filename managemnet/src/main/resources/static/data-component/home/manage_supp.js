@@ -9,7 +9,7 @@ $(document).ready(function() {
         {name: 'ceo', index: 'ceo', align: 'center', width: '10%'},
         {name: 'buss_type', index: 'buss_type', align: 'center', width: '10%'},
         {name: 'emp_name', index: 'emp_name', align: 'center', width: '10%'},
-        {name: 'loc_code', index: 'loc_code', align: 'center', hidden : true},
+        {name: 'loc_code', index: 'loc_code', align: 'center', width: '10%'},
         {name: 'loc_name', index: 'loc_name', align: 'center', width: '10%'},
         {name: 'user_code', index: 'user_code', align: 'center', width: '10%'},
         {name: 'create_date', index: 'create_date', align: 'center', width: '10%'},
@@ -110,13 +110,15 @@ function check_supp(){
     }).trigger('reloadGrid');
 }
 
-function search_supp(){
-    $("#jqGrid").setGridParam({
-        url : "search_Supp_list",
-        postData : {searchType:$("#search_supp").val()},
-        datatype: "json",
-        mtype: "post"
-    }).trigger('reloadGrid');
+function search_supp(event){
+    if(event.keyCode == 13 || event.which == 13){
+        $("#jqGrid").setGridParam({
+            url : "search_Supp_list",
+            postData : {searchType:$("#search_supp").val()},
+            datatype: "json",
+            mtype: "post"
+        }).trigger('reloadGrid');
+    }
 }
 
 function Delete_Supp_Data() {

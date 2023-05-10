@@ -20,7 +20,7 @@
     </select>
 
     <select id="viewlocAll" resultType="org.example.home.DTO.SYS_SUPP_CD">
-        SELECT * FROM SYS_SUPP_CD
+        SELECT A.*, B.LOC_CODE, B.LOC_NAME  FROM SYS_SUPP_CD A LEFT JOIN SYS_LOC_CD B ON A.LOC_CODE = B.LOC_CODE
     </select>
 
     <select id="search_Model" resultType="org.example.home.DTO.SYS_MODEL_CD">
