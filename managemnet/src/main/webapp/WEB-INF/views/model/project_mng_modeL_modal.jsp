@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<div id="dialog1">
+<div id="dialog1" style="display: none">
     <div class="modal__background">
         <div class="modal__box">
             <table border="1px solid black" id="modal_modeldata">

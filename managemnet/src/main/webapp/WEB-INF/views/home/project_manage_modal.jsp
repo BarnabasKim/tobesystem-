@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-<div id="dialog1" class="modal_background" title="모달화면">
+<div id="dialog1" class="modal_background" title="모달화면" style="display: none">
     <div class=input-wrap">
         <fieldset id="modaldata">
             <legend>로케이션 추가창</legend>

@@ -15,7 +15,7 @@
     <script src="data-component/home/manage_supp2.js"></script>
 </head>
 <body>
-<div id="dialog1" class="modal_background" title="모달화면">
+<div id="dialog1" class="modal_background" title="모달화면" style="display: none">
 
     <table id="modalsuppdata">
         <tr>
